@@ -848,11 +848,11 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-lg-12">
+						<div class="col-lg-12 mb-3">
 							<div class="custom-card">
-								<div class="row">
-									<div class="col-lg-8">
-										<div class="custom-card">
+								<div class="row mt-3">
+									<div class="col-lg-7 d-flex flex-column flex-grow-1 mb-3">
+										<div class="custom-card h-100">
 											<div class="d-flex justify-content-between">
 												<h5>App Usage</h5>
 												<a href="#"
@@ -876,8 +876,514 @@
 											<div class="chart-area mt-3">
 												<canvas id="myChart" height="50%" width="100%"></canvas>
 											</div>
+											<div class="period-filter mt-4">
+												<ul class="nav nav-pills period-filter-links">
+													<li class="nav-item">
+														<a class="nav-link active" href="#">Day</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" href="#">Week</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" href="#">Month</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" href="#">Year</a>
+													</li>
+												</ul>
+											</div>
 										</div>
 									</div>
+
+									<div class="col-lg-5 d-flex flex-column flex-grow-1 mb-3">
+										<div class="custom-card h-100">
+											<div class="d-flex justify-content-between">
+												<h5>App Downloads</h5>
+												<a href="#"
+													><img
+														src="./assets/images/right-pointer.svg"
+														class="img-fluid"
+														alt=""
+												/></a>
+											</div>
+											<div
+												class="chart-area mt-4 d-flex flex-column justify-content-center"
+											>
+												<div class="row align-items-center">
+													<div class="col-lg-8">
+														<div class="p-3 position-relative">
+															<canvas
+																id="myPieChart"
+																style="width: 100%; height: 100%"
+															></canvas>
+															<div class="position-absolute no-of-downloads">
+																<h5>2M</h5>
+																<p>ALL DOWNLOADS</p>
+															</div>
+														</div>
+													</div>
+													<div class="col-lg-4">
+														<div class="d-flex flex-column">
+															<div class="visitors align-items-center mb-2">
+																<div style="height: 25px; width: 25px"></div>
+																&nbsp;&nbsp;
+																<h6 class="mb-0">Android</h6>
+															</div>
+															<div class="hits align-items-center mb-2">
+																<div style="height: 25px; width: 25px"></div>
+																&nbsp;&nbsp;
+																<h6 class="mb-0">IOS</h6>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="row mt-3 mb-4">
+													<div class="col-12">
+														<ul class="nav nav-tabs pie-days">
+															<li class="nav-item">
+																<a class="nav-link" href="#">Mon</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" href="#">Tue</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link active" href="#">Wed</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link">Thu</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link">Fri</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link">Sat</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link">Sun</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="period-filter mt-4">
+												<ul class="nav nav-pills period-filter-links">
+													<li class="nav-item">
+														<a class="nav-link active" href="#">Week</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" href="#">Month</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" href="#">Year</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-5 mb-3 d-flex flex-column flex-grow-1">
+							<div class="custom-card h-100">
+								<div class="d-flex justify-content-between">
+									<h5>Last transaction</h5>
+									<a href="#"
+										><img
+											src="./assets/images/right-pointer.svg"
+											class="img-fluid"
+											alt=""
+									/></a>
+								</div>
+								<div class="wallet-balance-card mt-2">
+									<div class="row">
+										<div class="col-6">
+											<div class="d-flex flex-column">
+												<div class="d-flex align-items-center">
+													<i class="fa fa-circle text-grey"></i
+													>&nbsp;&nbsp;<span class="text-light font-sm"
+														>ALL USERS</span
+													>
+												</div>
+												<h4 class="text-light mt-2">752K</h4>
+												<p class="text-danger font-sm f-weight-500">-2.5%</p>
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="d-flex flex-column align-items-end">
+												<div class="d-flex align-items-center">
+													<span class="text-light font-sm">WALLET BALANCE</span
+													>&nbsp;&nbsp;<i class="fa fa-circle text-dark"></i>
+												</div>
+												<h4 class="text-light mt-2">₦252K</h4>
+												<p class="text-success font-sm f-weight-500">+2.5%</p>
+											</div>
+										</div>
+									</div>
+									<div
+										class="d-flex justify-content-between align-items-center"
+									>
+										<h6 class="text-light font-sm2">My Card</h6>
+										<a href="#"
+											><svg
+												width="17"
+												height="17"
+												viewBox="0 0 17 17"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M15.1253 4.29486L4.72984 14.6904L1.51571 15.076L1.90141 11.8619L12.2969 1.46643C12.3061 1.46378 12.3158 1.4611 12.3258 1.45839C12.4626 1.42133 12.6605 1.38264 12.8925 1.37944C13.3367 1.37331 13.9278 1.49293 14.5133 2.07843C15.0988 2.66392 15.2184 3.25504 15.2123 3.69925C15.2091 3.93131 15.1704 4.1292 15.1334 4.266C15.1307 4.27601 15.128 4.28563 15.1253 4.29486Z"
+													stroke="white"
+													stroke-width="2"
+												/>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="row justify-content-between mt-2">
+									<div class="col-lg-4 mb-2">
+										<div class="d-flex align-items-center">
+											<div class="funding-div">
+												<img
+													src="./assets/images/fund-icon.svg"
+													class="img-fluid"
+													alt="withdrawal"
+												/>
+											</div>
+											<div class="ml-2">
+												<h5 class="font-sm mb-0 f-weight-600">Funding</h5>
+												<p class="font-xs mb-0">05.01.2020</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-5">
+										<div class="d-flex align-items-center">
+											<div class="visa-card-div">
+												<h6 class="text-light mb-0 f-weight-600">VISA</h6>
+											</div>
+											<div class="ml-2">
+												<h5 class="font-sm mb-0 f-weight-600">
+													My Master card
+												</h5>
+												<p class="font-xs mb-0">0924 ******* 5675</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3">
+										<div class="d-flex justify-content-end">
+											<h5>+2500</h5>
+										</div>
+									</div>
+								</div>
+								<div class="row justify-content-between mt-2">
+									<div class="col-lg-4 mb-2">
+										<div class="d-flex align-items-center">
+											<div class="withdrawal-div">
+												<img
+													src="./assets/images/withdrawal-arrow.svg"
+													class="img-fluid"
+													alt="withdrawal"
+												/>
+											</div>
+											<div class="ml-2">
+												<h5 class="font-sm mb-0 f-weight-600">Withdrawal</h5>
+												<p class="font-xs mb-0">05.01.2020</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-5">
+										<div class="d-flex align-items-center">
+											<div class="visa-card-div">
+												<h6 class="text-light mb-0 f-weight-600">VISA</h6>
+											</div>
+											<div class="ml-2">
+												<h5 class="font-sm mb-0 f-weight-600">
+													My Master card
+												</h5>
+												<p class="font-xs mb-0">0924 ******* 5675</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3">
+										<div class="d-flex justify-content-end">
+											<h5>-2500</h5>
+										</div>
+									</div>
+								</div>
+								<div class="row justify-content-between mt-2">
+									<div class="col-lg-4 mb-2">
+										<div class="d-flex align-items-center">
+											<div class="withdrawal-div">
+												<img
+													src="./assets/images/withdrawal-arrow.svg"
+													class="img-fluid"
+													alt="withdrawal"
+												/>
+											</div>
+											<div class="ml-2">
+												<h5 class="font-sm mb-0 f-weight-600">Withdrawal</h5>
+												<p class="font-xs mb-0">05.01.2020</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-5">
+										<div class="d-flex align-items-center">
+											<div class="visa-card-div">
+												<h6 class="text-light mb-0 f-weight-600">VISA</h6>
+											</div>
+											<div class="ml-2">
+												<h5 class="font-sm mb-0 f-weight-600">
+													My Master card
+												</h5>
+												<p class="font-xs mb-0">0924 ******* 5675</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3">
+										<div class="d-flex justify-content-end">
+											<h5>-2500</h5>
+										</div>
+									</div>
+								</div>
+								<div class="row justify-content-between mt-2">
+									<div class="col-lg-4 mb-2">
+										<div class="d-flex align-items-center">
+											<div class="funding-div">
+												<img
+													src="./assets/images/fund-icon.svg"
+													class="img-fluid"
+													alt="withdrawal"
+												/>
+											</div>
+											<div class="ml-2">
+												<h5 class="font-sm mb-0 f-weight-600">Funding</h5>
+												<p class="font-xs mb-0">05.01.2020</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-5">
+										<div class="d-flex align-items-center">
+											<div class="visa-card-div">
+												<h6 class="text-light mb-0 f-weight-600">VISA</h6>
+											</div>
+											<div class="ml-2">
+												<h5 class="font-sm mb-0 f-weight-600">
+													My Master card
+												</h5>
+												<p class="font-xs mb-0">0924 ******* 5675</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3">
+										<div class="d-flex justify-content-end">
+											<h5>+2500</h5>
+										</div>
+									</div>
+								</div>
+								<div class="row justify-content-between mt-2">
+									<div class="col-lg-4 mb-2">
+										<div class="d-flex align-items-center">
+											<div class="funding-div">
+												<img
+													src="./assets/images/fund-icon.svg"
+													class="img-fluid"
+													alt="withdrawal"
+												/>
+											</div>
+											<div class="ml-2">
+												<h5 class="font-sm mb-0 f-weight-600">Funding</h5>
+												<p class="font-xs mb-0">05.01.2020</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-5">
+										<div class="d-flex align-items-center">
+											<div class="visa-card-div">
+												<h6 class="text-light mb-0 f-weight-600">VISA</h6>
+											</div>
+											<div class="ml-2">
+												<h5 class="font-sm mb-0 f-weight-600">
+													My Master card
+												</h5>
+												<p class="font-xs mb-0">0924 ******* 5675</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3">
+										<div class="d-flex justify-content-end">
+											<h5>+2500</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 mb-3 d-flex flex-column flex-grow-1">
+							<div class="custom-card h-100">
+								<div class="d-flex justify-content-between">
+									<h5>Newest Users</h5>
+									<a href="#"
+										><img
+											src="./assets/images/right-pointer.svg"
+											class="img-fluid"
+											alt=""
+									/></a>
+								</div>
+								<ul class="p-0 mt-3" style="list-style-type: none">
+									<li
+										class="d-flex align-items-center justify-content-between mb-3"
+									>
+										<div class="d-flex align-items-center">
+											<span class="font-sm">1.</span>&nbsp;
+											<div>
+												<img
+													src="./assets/images/user-avatar.svg"
+													style="height: 40px; width: 40px"
+													alt=""
+												/>
+											</div>
+											&nbsp;
+											<div>
+												<h5 class="font-sm2 f-weight-600">Fredrick Izumba</h5>
+												<p class="font-sm mb-0">fed.ozumba@gmail.com</p>
+											</div>
+										</div>
+										<a href=""><i class="fa fa-angle-right text-dark"></i></a>
+									</li>
+									<li
+										class="d-flex align-items-center justify-content-between mb-3"
+									>
+										<div class="d-flex align-items-center">
+											<span class="font-sm">2.</span>&nbsp;
+											<div>
+												<img
+													src="./assets/images/user-avatar.svg"
+													style="height: 40px; width: 40px"
+													alt=""
+												/>
+											</div>
+											&nbsp;
+											<div>
+												<h5 class="font-sm2 f-weight-600">Fredrick Izumba</h5>
+												<p class="font-sm mb-0">fed.ozumba@gmail.com</p>
+											</div>
+										</div>
+										<a href=""><i class="fa fa-angle-right text-dark"></i></a>
+									</li>
+									<li
+										class="d-flex align-items-center justify-content-between mb-3"
+									>
+										<div class="d-flex align-items-center">
+											<span class="font-sm">3.</span>&nbsp;
+											<div>
+												<img
+													src="./assets/images/user-avatar.svg"
+													style="height: 40px; width: 40px"
+													alt=""
+												/>
+											</div>
+											&nbsp;
+											<div>
+												<h5 class="font-sm2 f-weight-600">Fredrick Izumba</h5>
+												<p class="font-sm mb-0">fed.ozumba@gmail.com</p>
+											</div>
+										</div>
+										<a href=""><i class="fa fa-angle-right text-dark"></i></a>
+									</li>
+									<li
+										class="d-flex align-items-center justify-content-between mb-3"
+									>
+										<div class="d-flex align-items-center">
+											<span class="font-sm">4.</span>&nbsp;
+											<div>
+												<img
+													src="./assets/images/user-avatar.svg"
+													style="height: 40px; width: 40px"
+													alt=""
+												/>
+											</div>
+											&nbsp;
+											<div>
+												<h5 class="font-sm2 f-weight-600">Fredrick Izumba</h5>
+												<p class="font-sm mb-0">fed.ozumba@gmail.com</p>
+											</div>
+										</div>
+										<a href=""><i class="fa fa-angle-right text-dark"></i></a>
+									</li>
+									<li
+										class="d-flex align-items-center justify-content-between mb-3"
+									>
+										<div class="d-flex align-items-center">
+											<span class="font-sm">5.</span>&nbsp;
+											<div>
+												<img
+													src="./assets/images/user-avatar.svg"
+													style="height: 40px; width: 40px"
+													alt=""
+												/>
+											</div>
+											&nbsp;
+											<div>
+												<h5 class="font-sm2 f-weight-600">Fredrick Izumba</h5>
+												<p class="font-sm mb-0">fed.ozumba@gmail.com</p>
+											</div>
+										</div>
+										<a href=""><i class="fa fa-angle-right text-dark"></i></a>
+									</li>
+									<li
+										class="d-flex align-items-center justify-content-between mb-3"
+									>
+										<div class="d-flex align-items-center">
+											<span class="font-sm">6.</span>&nbsp;
+											<div>
+												<img
+													src="./assets/images/user-avatar.svg"
+													style="height: 40px; width: 40px"
+													alt=""
+												/>
+											</div>
+											&nbsp;
+											<div>
+												<h5 class="font-sm2 f-weight-600">Fredrick Izumba</h5>
+												<p class="font-sm mb-0">fed.ozumba@gmail.com</p>
+											</div>
+										</div>
+										<a href=""><i class="fa fa-angle-right text-dark"></i></a>
+									</li>
+									<li
+										class="d-flex align-items-center justify-content-between mb-3"
+									>
+										<div class="d-flex align-items-center">
+											<span class="font-sm">7.</span>&nbsp;
+											<div>
+												<img
+													src="./assets/images/user-avatar.svg"
+													style="height: 40px; width: 40px"
+													alt=""
+												/>
+											</div>
+											&nbsp;
+											<div>
+												<h5 class="font-sm2 f-weight-600">Fredrick Izumba</h5>
+												<p class="font-sm mb-0">fed.ozumba@gmail.com</p>
+											</div>
+										</div>
+										<a href=""><i class="fa fa-angle-right text-dark"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-4 mb-3 d-flex flex-column flex-grow-1">
+							<div class="custom-card h-100">
+								<div class="d-flex justify-content-between">
+									<h5>Trending Talks</h5>
+									<a href="#"
+										><img
+											src="./assets/images/right-pointer.svg"
+											class="img-fluid"
+											alt=""
+									/></a>
 								</div>
 							</div>
 						</div>
@@ -947,6 +1453,45 @@
 							},
 						},
 					},
+					plugins: {
+						legend: {
+							display: false,
+						},
+					},
+				},
+			});
+
+			const ctx2 = document.getElementById("myPieChart");
+			const myPieChart = new Chart(ctx2, {
+				type: "doughnut",
+				data: {
+					labels: ["Android", "IOS"],
+					datasets: [
+						{
+							label: null,
+							data: [5000, 12000],
+							backgroundColor: ["#842A83", "rgba(132, 42, 131, 0.45)"],
+							borderWidth: 1,
+						},
+					],
+				},
+				options: {
+					// scales: {
+					// 	x: {
+					// 		stacked: true,
+					// 		grid: {
+					// 			display: false,
+					// 		},
+					// 	},
+					// 	y: {
+					// 		beginAtZero: false,
+					// 		min: 100,
+					// 		max: 16000,
+					// 		grid: {
+					// 			display: false,
+					// 		},
+					// 	},
+					// },
 					plugins: {
 						legend: {
 							display: false,

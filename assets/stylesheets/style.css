@@ -253,6 +253,7 @@ body {
 	border-radius: 10px;
 	background-color: #fff;
 	padding: 20.5px 20px;
+	width: 100%;
 }
 
 .trend-div {
@@ -296,4 +297,83 @@ body {
 	background-color: #f6f4fd;
 	border-radius: 5px;
 	padding: 10px;
+}
+.pie-days {
+	border-bottom: unset;
+	display: flex;
+	justify-content: space-around;
+}
+.pie-days .nav-item .nav-link {
+	padding: unset;
+	color: #262626;
+	font-size: 0.75rem;
+}
+.pie-days .nav-item .active {
+	border-color: unset;
+	border: none;
+	background-color: transparent;
+	color: #842a83;
+	font-weight: 600;
+}
+.no-of-downloads {
+	top: 95px;
+	left: 85px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.no-of-downloads h5 {
+	font-weight: 700;
+}
+.no-of-downloads p {
+	font-size: 0.75rem;
+	font-weight: 600;
+}
+.period-filter-links .nav-item .active {
+	background-color: #5a020e;
+	box-shadow: 0px 4px 20px rgba(154, 18, 36, 0.15);
+	border-radius: 2px;
+	color: #fff !important;
+}
+.period-filter-links .nav-item .nav-link {
+	font-size: 0.75rem;
+	color: #000;
+}
+.wallet-balance-card {
+	background-color: #842a83;
+	border-radius: 10px;
+	padding: 25px;
+	box-shadow: 0px 15px 20px rgba(132, 42, 131, 0.2);
+}
+.text-grey {
+	color: #bd8c93;
+}
+.withdrawal-div {
+	height: 35px;
+	width: 35px;
+	border-radius: 50%;
+	background-color: rgba(189, 140, 147, 0.1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.funding-div {
+	height: 35px;
+	width: 35px;
+	border-radius: 50%;
+	background-color: rgba(50, 171, 69, 0.05);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.visa-card-div {
+	height: 25px;
+	width: 45px;
+	border-radius: 5px;
+	background-color: rgba(189, 140, 147, 0.1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #2469eb;
 }
