@@ -3,7 +3,7 @@
 	<head>
 		<!-- Basic Page Needs
     ================================================== -->
-		<title>Dashboard</title>
+		<title>Add User</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta
@@ -54,7 +54,7 @@
 						alt="Logo"
 				/></a>
 				<ul class="nav-menu mt-4">
-					<li class="nav-item active">
+					<li class="nav-item">
 						<a href="#" class="nav-link">
 							<i class=""
 								><svg
@@ -63,6 +63,7 @@
 									viewBox="0 0 26 26"
 									fill="none"
 									xmlns="http://www.w3.org/2000/svg"
+									class="dBoard"
 								>
 									<path
 										d="M3.625 3.83203H11.4375C11.5583 3.83203 11.62 3.8701 11.6504 3.90043C11.6807 3.93076 11.7188 3.99253 11.7188 4.11328V11.9258C11.7188 12.0465 11.6807 12.1083 11.6504 12.1386C11.62 12.169 11.5583 12.207 11.4375 12.207H3.625C3.50425 12.207 3.44248 12.169 3.41215 12.1386C3.38182 12.1083 3.34375 12.0465 3.34375 11.9258V4.11328C3.34375 3.99253 3.38182 3.93076 3.41215 3.90043C3.44248 3.8701 3.50425 3.83203 3.625 3.83203Z"
@@ -90,7 +91,7 @@
 					>Management <i class="fa fa-angle-down"></i
 				></a>
 				<ul class="nav-menu mt-3">
-					<li class="nav-item">
+					<li class="nav-item active">
 						<a href="#" class="nav-link">
 							<i class=""
 								><svg
@@ -742,902 +743,147 @@
 					</div>
 				</div>
 			</header>
-			<!-- Main Content-->
 			<div class="main-content">
 				<div class="container-fluid">
-					<div class="row">
-						<div class="col-12 mt-5 mb-3">
-							<ul class="myBreadcrumb p-0">
-								<li>
-									<a href="#" class="d-flex align-items-center"
-										><i class="fa fa-home text-darkGrey"></i
-										><span class="font-xs pl-2 f-weight-500 mt-1 text-dark"
-											>Home</span
-										></a
-									>
-								</li>
-							</ul>
-							<div
-								class="mt-4 d-flex justify-content-between align-items-center"
-							>
-								<h5>Dashboard</h5>
-								<div class="form-group">
-									<label for="filter" class="font-sm f-weight-600 text-dark"
-										>Filter by:</label
-									>
-									<select class="filter-field">
-										<option value="" selected>Date and time</option>
-									</select>
-								</div>
+					<div class="row mb-3">
+						<div class="col-12 mt-5">
+							<div class="d-flex align-item-center">
+								<ul class="d-flex">
+									<li class="mr-2">
+										<i class="fa fa-home"></i
+										><span class="font-xs pl-2 f-weight-500 mt-1">Home</span>
+									</li>
+									<li class="mr-2">
+										<i class="fa fa-chevron-right font-xs"></i>
+										<span class="font-xs pl-2 f-weight-500 mt-1"
+											>Users Management</span
+										>
+									</li>
+									<li class="mr-2">
+										<i class="fa fa-chevron-right font-xs"></i>
+										<span class="font-xs pl-2 f-weight-500 mt-1"
+											><strong>Create New</strong></span
+										>
+									</li>
+								</ul>
+							</div>
+							<div class="mt-4 d-flex align-items-center">
+								<h5>Add a New User</h5>
 							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-xl-3 col-md-6 mb-3">
-							<div class="custom-card">
-								<div class="d-flex align-items-center">
-									<img
-										src="./assets/images/allUsersIcon.svg"
-										class="img-fluid"
-										alt="User"
-									/>
-									<div class="ml-4">
-										<h6 class="font-sm2 f-weight-500">ALL USERS</h6>
-										<h4 class="f-weight-600 mb-0">294K</h4>
-									</div>
-								</div>
-								<div class="trend-div mt-3">
-									<img
-										src="./assets/images/AllUsersChartImg.png"
-										class="img-fluid"
-										alt=""
-									/>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-3 col-md-6 mb-3">
-							<div class="custom-card">
-								<div class="d-flex align-items-center">
-									<img
-										src="./assets/images/allTalksIcon.svg"
-										class="img-fluid"
-										alt="Talks"
-									/>
-									<div class="ml-4">
-										<h6 class="font-sm2 f-weight-500">ALL TALKS</h6>
-										<h4 class="f-weight-600 mb-0">300</h4>
-									</div>
-								</div>
-								<div class="trend-div mt-3">
-									<img
-										src="./assets/images/allTalkChartImg.png"
-										class="img-fluid"
-										alt=""
-									/>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-3 col-md-6 mb-3">
-							<div class="custom-card">
-								<div class="d-flex align-items-center">
-									<img
-										src="./assets/images/allRoomsIcon.svg"
-										class="img-fluid"
-										alt="User"
-									/>
-									<div class="ml-4">
-										<h6 class="font-sm2 f-weight-500">ALL ROOMS</h6>
-										<h4 class="f-weight-600 mb-0">1939</h4>
-									</div>
-								</div>
-								<div class="trend-div mt-3">
-									<img
-										src="./assets/images/allRoomsChartImg.png"
-										class="img-fluid"
-										alt=""
-									/>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-3 col-md-6 mb-3">
-							<div class="custom-card">
-								<div class="d-flex align-items-center">
-									<img
-										src="./assets/images/allGiftsIcon.svg"
-										class="img-fluid"
-										alt="User"
-									/>
-									<div class="ml-4">
-										<h6 class="font-sm2 f-weight-500">ALL GIFTS</h6>
-										<h4 class="f-weight-600 mb-0">13495</h4>
-									</div>
-								</div>
-								<div class="trend-div mt-3">
-									<img
-										src="./assets/images/allGiftsChartImg.png"
-										class="img-fluid"
-										alt=""
-									/>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-12 mb-3">
-							<div class="custom-card">
-								<div class="row mt-3">
-									<div
-										class="col-xl-7 col-12 d-flex flex-column flex-grow-1 mb-3"
-									>
-										<div class="custom-card h-100">
-											<div class="d-flex justify-content-between">
-												<h5>App Usage</h5>
-												<a href="#"
-													><img
-														src="./assets/images/right-pointer.svg"
-														class="img-fluid"
-														alt=""
-												/></a>
-											</div>
-											<div class="mt-3 d-flex align-items-center">
-												<div class="bgColored-header">All transactions</div>
-												<div class="hits ml-3">
-													<div></div>
-													<h6 class="mb-0">Hits</h6>
-												</div>
-												<div class="visitors ml-3">
-													<div></div>
-													<h6 class="mb-0">Visitors</h6>
-												</div>
-											</div>
-											<div class="chart-area mt-3">
-												<canvas id="myChart" height="50%" width="100%"></canvas>
-											</div>
-											<div class="period-filter mt-4">
-												<ul class="nav nav-pills period-filter-links">
-													<li class="nav-item">
-														<a class="nav-link active" href="#">Day</a>
-													</li>
-													<li class="nav-item">
-														<a class="nav-link" href="#">Week</a>
-													</li>
-													<li class="nav-item">
-														<a class="nav-link" href="#">Month</a>
-													</li>
-													<li class="nav-item">
-														<a class="nav-link" href="#">Year</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-
-									<div
-										class="col-xl-5 col-12 d-flex flex-column flex-grow-1 mb-3"
-									>
-										<div class="custom-card h-100">
-											<div class="d-flex justify-content-between">
-												<h5>App Downloads</h5>
-												<a href="#"
-													><img
-														src="./assets/images/right-pointer.svg"
-														class="img-fluid"
-														alt=""
-												/></a>
-											</div>
-											<div
-												class="chart-area mt-4 d-flex flex-column justify-content-center"
-											>
-												<div class="row align-items-center">
-													<div class="col-lg-8">
-														<div class="p-3 position-relative">
-															<canvas
-																id="myPieChart"
-																style="width: 100%; height: 100%"
-															></canvas>
-															<div class="position-absolute no-of-downloads">
-																<h5>2M</h5>
-																<p>ALL DOWNLOADS</p>
-															</div>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<div class="d-flex flex-column">
-															<div class="visitors align-items-center mb-2">
-																<div style="height: 25px; width: 25px"></div>
-																&nbsp;&nbsp;
-																<h6 class="mb-0">Android</h6>
-															</div>
-															<div class="hits align-items-center mb-2">
-																<div style="height: 25px; width: 25px"></div>
-																&nbsp;&nbsp;
-																<h6 class="mb-0">IOS</h6>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="row mt-3 mb-4">
-													<div class="col-12">
-														<ul class="nav nav-tabs pie-days">
-															<li class="nav-item">
-																<a class="nav-link" href="#">Mon</a>
-															</li>
-															<li class="nav-item">
-																<a class="nav-link" href="#">Tue</a>
-															</li>
-															<li class="nav-item">
-																<a class="nav-link active" href="#">Wed</a>
-															</li>
-															<li class="nav-item">
-																<a class="nav-link">Thu</a>
-															</li>
-															<li class="nav-item">
-																<a class="nav-link">Fri</a>
-															</li>
-															<li class="nav-item">
-																<a class="nav-link">Sat</a>
-															</li>
-															<li class="nav-item">
-																<a class="nav-link">Sun</a>
-															</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-											<div class="period-filter mt-4">
-												<ul class="nav nav-pills period-filter-links">
-													<li class="nav-item">
-														<a class="nav-link active" href="#">Week</a>
-													</li>
-													<li class="nav-item">
-														<a class="nav-link" href="#">Month</a>
-													</li>
-													<li class="nav-item">
-														<a class="nav-link" href="#">Year</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
+					<div class="row mb-5">
 						<div
-							class="col-xl-5 col-lg-6 col-md-12 mb-3 d-flex flex-column flex-grow-1"
+							class="col-md-6 d-flex justify-content-between align-item-center mt-3 basic-info"
 						>
-							<div class="custom-card h-100">
-								<div class="d-flex justify-content-between">
-									<h5>Last transaction</h5>
-									<a href="#"
-										><img
-											src="./assets/images/right-pointer.svg"
-											class="img-fluid"
-											alt=""
-									/></a>
+							<div class="d-flex align-item-center ml-2 basic-info-inner">
+								<div
+									class="circle purple d-flex justify-content-center align-item-center"
+								>
+									<img src="../assets/images/Check.svg" alt="" />
 								</div>
-								<div class="wallet-balance-card mt-2">
-									<div class="row">
-										<div class="col-6">
+								<div
+									class="circle num2 purple d-flex justify-content-center align-item-center ml-2"
+								>
+									<span>2</span>
+								</div>
+								<h6 class="mt-2 ml-2">Advanced Information</h6>
+							</div>
+							<div class="d-flex mr-2">
+								<div
+									class="circle white d-flex justify-content-center align-item-center m-2"
+								>
+									<span>3</span>
+								</div>
+								<div
+									class="circle white d-flex justify-content-center align-item-center m-2"
+								>
+									<span>4</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="custom-card col-md-6 ml-3">
+							<form>
+								<div class="form-group position-relative mb-4 pl-3 pr-3">
+									<label for="userBio" class="mb-3 font-lg f-weight-600"
+										>User Bio</label
+									><br />
+									<p class="mb-4">
+										Write something interesting about this user
+									</p>
+									<textarea
+										class="form_textarea_fields pl-4 pt-3 w-100"
+										placeholder="Tell us about yourself"
+										name="userBio"
+									></textarea>
+								</div>
+								<hr />
+								<div class="form-group position-relative mb-4 pl-3 pr-3">
+									<label class="mb-3 mt-4 font-lg f-weight-600"
+										>Employment</label
+									><br />
+									<p class="mb-4">Write about this user's work experience</p>
+									<div class="d-flex justify-content-between p-4">
+										<div>
+											<i class="fa fa-university" aria-hidden="true"></i>
+											Industry
+										</div>
+										<div>
+											Select
+											<img
+												src="../assets/images/arrowForward.svg"
+												alt="arrowForward"
+											/>
+										</div>
+									</div>
+									<hr />
+									<div class="d-flex justify-content-between p-4">
+										<div>
+											<i class="fa fa-suitcase" aria-hidden="true"></i>
+											Job
+										</div>
+										<div>
+											Select
+											<img
+												src="../assets/images/arrowForward.svg"
+												alt="arrowForward"
+											/>
+										</div>
+									</div>
+								</div>
+								<div class="form-group position-relative mb-4 pl-3 pr-3">
+									<label class="mb-3 mt-2"><strong>Photo Album</strong></label
+									><br />
+									<p class="mb-4">Profiles with picture have more chances</p>
+									<div class="d-flex flex-column w-100">
+										<div class="d-flex">
+											<img
+												class="mr-3 mb-3"
+												src="../assets/images/Photo-1.svg"
+											/>
 											<div class="d-flex flex-column">
-												<div class="d-flex align-items-center">
-													<i class="fa fa-circle text-grey"></i
-													>&nbsp;&nbsp;<span class="text-light font-sm"
-														>ALL USERS</span
-													>
-												</div>
-												<h4 class="text-light mt-2">752K</h4>
-												<p class="text-danger font-sm f-weight-500">-2.5%</p>
+												<img class="mb-3" src="../assets/images/Photo-2.svg" />
+												<img src="../assets/images/Photo-3.svg" />
 											</div>
 										</div>
-										<div class="col-6">
-											<div class="d-flex flex-column align-items-end">
-												<div class="d-flex align-items-center">
-													<span class="text-light font-sm">WALLET BALANCE</span
-													>&nbsp;&nbsp;<i class="fa fa-circle text-dark"></i>
-												</div>
-												<h4 class="text-light mt-2">₦252K</h4>
-												<p class="text-success font-sm f-weight-500">+2.5%</p>
-											</div>
-										</div>
-									</div>
-									<div
-										class="d-flex justify-content-between align-items-center"
-									>
-										<h6 class="text-light font-sm2">My Card</h6>
-										<a href="#"
-											><svg
-												width="17"
-												height="17"
-												viewBox="0 0 17 17"
-												fill="none"
-												xmlns="http://www.w3.org/2000/svg"
-											>
-												<path
-													d="M15.1253 4.29486L4.72984 14.6904L1.51571 15.076L1.90141 11.8619L12.2969 1.46643C12.3061 1.46378 12.3158 1.4611 12.3258 1.45839C12.4626 1.42133 12.6605 1.38264 12.8925 1.37944C13.3367 1.37331 13.9278 1.49293 14.5133 2.07843C15.0988 2.66392 15.2184 3.25504 15.2123 3.69925C15.2091 3.93131 15.1704 4.1292 15.1334 4.266C15.1307 4.27601 15.128 4.28563 15.1253 4.29486Z"
-													stroke="white"
-													stroke-width="2"
-												/>
-											</svg>
-										</a>
-									</div>
-								</div>
-								<div class="row justify-content-between mt-2">
-									<div class="col-4 mb-2">
-										<div class="d-flex align-items-center">
-											<div class="funding-div">
-												<img
-													src="./assets/images/fund-icon.svg"
-													class="img-fluid"
-													alt="withdrawal"
-												/>
-											</div>
-											<div class="ml-2">
-												<h5 class="font-sm mb-0 f-weight-600">Funding</h5>
-												<p class="font-xs mb-0">05.01.2020</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-5">
-										<div class="d-flex align-items-center">
-											<div class="visa-card-div">
-												<h6 class="text-light mb-0 f-weight-600">VISA</h6>
-											</div>
-											<div class="ml-2">
-												<h5 class="font-sm mb-0 f-weight-600">
-													My Master card
-												</h5>
-												<p class="font-xs mb-0">0924 ******* 5675</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-3">
-										<div class="d-flex justify-content-end">
-											<h5>+2500</h5>
+										<div>
+											<img class="ml-1" src="../assets/images/Photo-4.svg" />
+											<img class="ml-1" src="../assets/images/Photo-5.svg" />
+											<img class="ml-2" src="../assets/images/Photo-6.svg" />
 										</div>
 									</div>
 								</div>
-								<div class="row justify-content-between mt-2">
-									<div class="col-4 mb-2">
-										<div class="d-flex align-items-center">
-											<div class="withdrawal-div">
-												<img
-													src="./assets/images/withdrawal-arrow.svg"
-													class="img-fluid"
-													alt="withdrawal"
-												/>
-											</div>
-											<div class="ml-2">
-												<h5 class="font-sm mb-0 f-weight-600">Withdrawal</h5>
-												<p class="font-xs mb-0">05.01.2020</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-5">
-										<div class="d-flex align-items-center">
-											<div class="visa-card-div">
-												<h6 class="text-light mb-0 f-weight-600">VISA</h6>
-											</div>
-											<div class="ml-2">
-												<h5 class="font-sm mb-0 f-weight-600">
-													My Master card
-												</h5>
-												<p class="font-xs mb-0">0924 ******* 5675</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-3">
-										<div class="d-flex justify-content-end">
-											<h5>-2500</h5>
-										</div>
-									</div>
+								<div class="form-group mt-4">
+									<label for="submit"></label>
+									<input
+										type="submit"
+										class="btn btn-continue"
+										value="Continue"
+									/>
 								</div>
-								<div class="row justify-content-between mt-2">
-									<div class="col-4 mb-2">
-										<div class="d-flex align-items-center">
-											<div class="withdrawal-div">
-												<img
-													src="./assets/images/withdrawal-arrow.svg"
-													class="img-fluid"
-													alt="withdrawal"
-												/>
-											</div>
-											<div class="ml-2">
-												<h5 class="font-sm mb-0 f-weight-600">Withdrawal</h5>
-												<p class="font-xs mb-0">05.01.2020</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-5">
-										<div class="d-flex align-items-center">
-											<div class="visa-card-div">
-												<h6 class="text-light mb-0 f-weight-600">VISA</h6>
-											</div>
-											<div class="ml-2">
-												<h5 class="font-sm mb-0 f-weight-600">
-													My Master card
-												</h5>
-												<p class="font-xs mb-0">0924 ******* 5675</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-3">
-										<div class="d-flex justify-content-end">
-											<h5>-2500</h5>
-										</div>
-									</div>
-								</div>
-								<div class="row justify-content-between mt-2">
-									<div class="col-4 mb-2">
-										<div class="d-flex align-items-center">
-											<div class="funding-div">
-												<img
-													src="./assets/images/fund-icon.svg"
-													class="img-fluid"
-													alt="withdrawal"
-												/>
-											</div>
-											<div class="ml-2">
-												<h5 class="font-sm mb-0 f-weight-600">Funding</h5>
-												<p class="font-xs mb-0">05.01.2020</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-5">
-										<div class="d-flex align-items-center">
-											<div class="visa-card-div">
-												<h6 class="text-light mb-0 f-weight-600">VISA</h6>
-											</div>
-											<div class="ml-2">
-												<h5 class="font-sm mb-0 f-weight-600">
-													My Master card
-												</h5>
-												<p class="font-xs mb-0">0924 ******* 5675</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-3">
-										<div class="d-flex justify-content-end">
-											<h5>+2500</h5>
-										</div>
-									</div>
-								</div>
-								<div class="row justify-content-between mt-2">
-									<div class="col-4 mb-2">
-										<div class="d-flex align-items-center">
-											<div class="funding-div">
-												<img
-													src="./assets/images/fund-icon.svg"
-													class="img-fluid"
-													alt="withdrawal"
-												/>
-											</div>
-											<div class="ml-2">
-												<h5 class="font-sm mb-0 f-weight-600">Funding</h5>
-												<p class="font-xs mb-0">05.01.2020</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-5">
-										<div class="d-flex align-items-center">
-											<div class="visa-card-div">
-												<h6 class="text-light mb-0 f-weight-600">VISA</h6>
-											</div>
-											<div class="ml-2">
-												<h5 class="font-sm mb-0 f-weight-600">
-													My Master card
-												</h5>
-												<p class="font-xs mb-0">0924 ******* 5675</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-3">
-										<div class="d-flex justify-content-end">
-											<h5>+2500</h5>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div
-							class="col-xl-3 col-lg-6 col-md-12 px-0 p-custom col-md-6 mb-3 d-flex flex-column flex-grow-1"
-						>
-							<div class="custom-card h-100">
-								<div class="d-flex justify-content-between">
-									<h5>Newest Users</h5>
-									<a href="#"
-										><img
-											src="./assets/images/right-pointer.svg"
-											class="img-fluid"
-											alt=""
-									/></a>
-								</div>
-								<ul class="p-0 mt-3" style="list-style-type: none">
-									<li
-										class="d-flex align-items-center justify-content-between mb-3"
-									>
-										<div class="d-flex align-items-center">
-											<span class="font-sm">1.</span>&nbsp;
-											<div>
-												<img
-													src="./assets/images/user-avatar.svg"
-													style="height: 40px; width: 40px"
-													alt=""
-												/>
-											</div>
-											&nbsp;
-											<div>
-												<h5 class="font-sm2 f-weight-600">Fredrick Izumba</h5>
-												<p class="font-sm mb-0">fed.ozumba@gmail.com</p>
-											</div>
-										</div>
-										<a href=""><i class="fa fa-angle-right text-dark"></i></a>
-									</li>
-									<li
-										class="d-flex align-items-center justify-content-between mb-3"
-									>
-										<div class="d-flex align-items-center">
-											<span class="font-sm">2.</span>&nbsp;
-											<div>
-												<img
-													src="./assets/images/user-avatar.svg"
-													style="height: 40px; width: 40px"
-													alt=""
-												/>
-											</div>
-											&nbsp;
-											<div>
-												<h5 class="font-sm2 f-weight-600">Fredrick Izumba</h5>
-												<p class="font-sm mb-0">fed.ozumba@gmail.com</p>
-											</div>
-										</div>
-										<a href=""><i class="fa fa-angle-right text-dark"></i></a>
-									</li>
-									<li
-										class="d-flex align-items-center justify-content-between mb-3"
-									>
-										<div class="d-flex align-items-center">
-											<span class="font-sm">3.</span>&nbsp;
-											<div>
-												<img
-													src="./assets/images/user-avatar.svg"
-													style="height: 40px; width: 40px"
-													alt=""
-												/>
-											</div>
-											&nbsp;
-											<div>
-												<h5 class="font-sm2 f-weight-600">Fredrick Izumba</h5>
-												<p class="font-sm mb-0">fed.ozumba@gmail.com</p>
-											</div>
-										</div>
-										<a href=""><i class="fa fa-angle-right text-dark"></i></a>
-									</li>
-									<li
-										class="d-flex align-items-center justify-content-between mb-3"
-									>
-										<div class="d-flex align-items-center">
-											<span class="font-sm">4.</span>&nbsp;
-											<div>
-												<img
-													src="./assets/images/user-avatar.svg"
-													style="height: 40px; width: 40px"
-													alt=""
-												/>
-											</div>
-											&nbsp;
-											<div>
-												<h5 class="font-sm2 f-weight-600">Fredrick Izumba</h5>
-												<p class="font-sm mb-0">fed.ozumba@gmail.com</p>
-											</div>
-										</div>
-										<a href=""><i class="fa fa-angle-right text-dark"></i></a>
-									</li>
-									<li
-										class="d-flex align-items-center justify-content-between mb-3"
-									>
-										<div class="d-flex align-items-center">
-											<span class="font-sm">5.</span>&nbsp;
-											<div>
-												<img
-													src="./assets/images/user-avatar.svg"
-													style="height: 40px; width: 40px"
-													alt=""
-												/>
-											</div>
-											&nbsp;
-											<div>
-												<h5 class="font-sm2 f-weight-600">Fredrick Izumba</h5>
-												<p class="font-sm mb-0">fed.ozumba@gmail.com</p>
-											</div>
-										</div>
-										<a href=""><i class="fa fa-angle-right text-dark"></i></a>
-									</li>
-									<li
-										class="d-flex align-items-center justify-content-between mb-3"
-									>
-										<div class="d-flex align-items-center">
-											<span class="font-sm">6.</span>&nbsp;
-											<div>
-												<img
-													src="./assets/images/user-avatar.svg"
-													style="height: 40px; width: 40px"
-													alt=""
-												/>
-											</div>
-											&nbsp;
-											<div>
-												<h5 class="font-sm2 f-weight-600">Fredrick Izumba</h5>
-												<p class="font-sm mb-0">fed.ozumba@gmail.com</p>
-											</div>
-										</div>
-										<a href=""><i class="fa fa-angle-right text-dark"></i></a>
-									</li>
-									<li
-										class="d-flex align-items-center justify-content-between mb-3"
-									>
-										<div class="d-flex align-items-center">
-											<span class="font-sm">7.</span>&nbsp;
-											<div>
-												<img
-													src="./assets/images/user-avatar.svg"
-													style="height: 40px; width: 40px"
-													alt=""
-												/>
-											</div>
-											&nbsp;
-											<div>
-												<h5 class="font-sm2 f-weight-600">Fredrick Izumba</h5>
-												<p class="font-sm mb-0">fed.ozumba@gmail.com</p>
-											</div>
-										</div>
-										<a href=""><i class="fa fa-angle-right text-dark"></i></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-xl-4 col-md-12 mb-3 d-flex flex-column flex-grow-1">
-							<div class="custom-card h-100">
-								<div class="d-flex justify-content-between">
-									<h5>Trending Talks</h5>
-									<a href="#"
-										><img
-											src="./assets/images/right-pointer.svg"
-											class="img-fluid"
-											alt=""
-									/></a>
-								</div>
-								<ul class="p-0 mt-3" style="list-style-type: none">
-									<li class="row justify-content-between align-items-center">
-										<div class="col-9">
-											<span class="talks-author"
-												><img
-													src="./assets/images/user-avatar.svg"
-													alt=""
-												/>&nbsp;&nbsp;By Farouk Asmaya</span
-											>
-											<h4 class="talk-topic mt-2">
-												Women’s lounge for relationship discussion and secret
-												sharing
-											</h4>
-											<span class="talks-date mt-2"
-												><img
-													src="./assets/images/calender-icon.svg"
-													alt=""
-												/>&nbsp;&nbsp;Published on February 2022</span
-											>
-										</div>
-										<div class="col-3">
-											<div class="dropdown ml-4">
-												<button
-													class="btn"
-													type="button"
-													data-toggle="dropdown"
-													aria-haspopup="true"
-													aria-expanded="false"
-												>
-													<svg
-														width="12"
-														height="12"
-														viewBox="0 0 12 12"
-														fill="none"
-														xmlns="http://www.w3.org/2000/svg"
-													>
-														<g clip-path="url(#clip0_1251_27914)">
-															<path
-																d="M7.06065 0.439338C7.64643 1.02512 7.64643 1.97487 7.06065 2.56066C6.47487 3.14644 5.52512 3.14644 4.93934 2.56066C4.35355 1.97487 4.35355 1.02512 4.93934 0.439338C5.5251 -0.146446 6.47484 -0.146446 7.06065 0.439338Z"
-																fill="black"
-															></path>
-															<path
-																d="M7.06065 4.93934C7.64643 5.52512 7.64643 6.47487 7.06065 7.06065C6.47487 7.64643 5.52512 7.64643 4.93934 7.06065C4.35355 6.47487 4.35355 5.52512 4.93934 4.93934C5.5251 4.35355 6.47484 4.35355 7.06065 4.93934Z"
-																fill="black"
-															></path>
-															<path
-																d="M7.06065 9.43934C7.64643 10.0251 7.64643 10.9749 7.06065 11.5607C6.47487 12.1464 5.52512 12.1464 4.93934 11.5607C4.35355 10.9749 4.35355 10.0251 4.93934 9.43934C5.5251 8.85355 6.47484 8.85355 7.06065 9.43934Z"
-																fill="black"
-															></path>
-														</g>
-														<defs>
-															<clipPath id="clip0_1251_27914">
-																<rect
-																	width="12"
-																	height="12"
-																	fill="white"
-																></rect>
-															</clipPath>
-														</defs>
-													</svg>
-												</button>
-												<div
-													class="dropdown-menu mt-3 my---dropdown"
-													aria-labelledby="dropdownMenuButton"
-												>
-													<div class="drop-down-menu-inner">
-														<a class="dropdown-item" href="#">Action</a>
-														<a class="dropdown-item" href="#">Another action</a>
-														<a class="dropdown-item" href="#"
-															>Something else here</a
-														>
-													</div>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li
-										class="row justify-content-between align-items-center mt-4"
-									>
-										<div class="col-9">
-											<span class="talks-author"
-												><img
-													src="./assets/images/user-avatar.svg"
-													alt=""
-												/>&nbsp;&nbsp;By Farouk Asmaya</span
-											>
-											<h4 class="talk-topic mt-2">
-												Single women association and dating advices
-											</h4>
-											<span class="talks-date mt-2"
-												><img
-													src="./assets/images/calender-icon.svg"
-													alt=""
-												/>&nbsp;&nbsp;Published on February 2022</span
-											>
-										</div>
-										<div class="col-3">
-											<div class="dropdown ml-4">
-												<button
-													class="btn"
-													type="button"
-													data-toggle="dropdown"
-													aria-haspopup="true"
-													aria-expanded="false"
-												>
-													<svg
-														width="12"
-														height="12"
-														viewBox="0 0 12 12"
-														fill="none"
-														xmlns="http://www.w3.org/2000/svg"
-													>
-														<g clip-path="url(#clip0_1251_27914)">
-															<path
-																d="M7.06065 0.439338C7.64643 1.02512 7.64643 1.97487 7.06065 2.56066C6.47487 3.14644 5.52512 3.14644 4.93934 2.56066C4.35355 1.97487 4.35355 1.02512 4.93934 0.439338C5.5251 -0.146446 6.47484 -0.146446 7.06065 0.439338Z"
-																fill="black"
-															></path>
-															<path
-																d="M7.06065 4.93934C7.64643 5.52512 7.64643 6.47487 7.06065 7.06065C6.47487 7.64643 5.52512 7.64643 4.93934 7.06065C4.35355 6.47487 4.35355 5.52512 4.93934 4.93934C5.5251 4.35355 6.47484 4.35355 7.06065 4.93934Z"
-																fill="black"
-															></path>
-															<path
-																d="M7.06065 9.43934C7.64643 10.0251 7.64643 10.9749 7.06065 11.5607C6.47487 12.1464 5.52512 12.1464 4.93934 11.5607C4.35355 10.9749 4.35355 10.0251 4.93934 9.43934C5.5251 8.85355 6.47484 8.85355 7.06065 9.43934Z"
-																fill="black"
-															></path>
-														</g>
-														<defs>
-															<clipPath id="clip0_1251_27914">
-																<rect
-																	width="12"
-																	height="12"
-																	fill="white"
-																></rect>
-															</clipPath>
-														</defs>
-													</svg>
-												</button>
-												<div
-													class="dropdown-menu mt-3 my---dropdown"
-													aria-labelledby="dropdownMenuButton"
-												>
-													<div class="drop-down-menu-inner">
-														<a class="dropdown-item" href="#">Action</a>
-														<a class="dropdown-item" href="#">Another action</a>
-														<a class="dropdown-item" href="#"
-															>Something else here</a
-														>
-													</div>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li
-										class="row justify-content-between align-items-center mt-4"
-									>
-										<div class="col-9">
-											<span class="talks-author"
-												><img
-													src="./assets/images/user-avatar.svg"
-													alt=""
-												/>&nbsp;&nbsp;By Farouk Asmaya</span
-											>
-											<h4 class="talk-topic mt-2">
-												Single women association and dating advices
-											</h4>
-											<span class="talks-date mt-2"
-												><img
-													src="./assets/images/calender-icon.svg"
-													alt=""
-												/>&nbsp;&nbsp;Published on February 2022</span
-											>
-										</div>
-										<div class="col-3">
-											<div class="dropdown ml-4">
-												<button
-													class="btn"
-													type="button"
-													data-toggle="dropdown"
-													aria-haspopup="true"
-													aria-expanded="false"
-												>
-													<svg
-														width="12"
-														height="12"
-														viewBox="0 0 12 12"
-														fill="none"
-														xmlns="http://www.w3.org/2000/svg"
-													>
-														<g clip-path="url(#clip0_1251_27914)">
-															<path
-																d="M7.06065 0.439338C7.64643 1.02512 7.64643 1.97487 7.06065 2.56066C6.47487 3.14644 5.52512 3.14644 4.93934 2.56066C4.35355 1.97487 4.35355 1.02512 4.93934 0.439338C5.5251 -0.146446 6.47484 -0.146446 7.06065 0.439338Z"
-																fill="black"
-															></path>
-															<path
-																d="M7.06065 4.93934C7.64643 5.52512 7.64643 6.47487 7.06065 7.06065C6.47487 7.64643 5.52512 7.64643 4.93934 7.06065C4.35355 6.47487 4.35355 5.52512 4.93934 4.93934C5.5251 4.35355 6.47484 4.35355 7.06065 4.93934Z"
-																fill="black"
-															></path>
-															<path
-																d="M7.06065 9.43934C7.64643 10.0251 7.64643 10.9749 7.06065 11.5607C6.47487 12.1464 5.52512 12.1464 4.93934 11.5607C4.35355 10.9749 4.35355 10.0251 4.93934 9.43934C5.5251 8.85355 6.47484 8.85355 7.06065 9.43934Z"
-																fill="black"
-															></path>
-														</g>
-														<defs>
-															<clipPath id="clip0_1251_27914">
-																<rect
-																	width="12"
-																	height="12"
-																	fill="white"
-																></rect>
-															</clipPath>
-														</defs>
-													</svg>
-												</button>
-												<div
-													class="dropdown-menu mt-3 my---dropdown"
-													aria-labelledby="dropdownMenuButton"
-												>
-													<div class="drop-down-menu-inner">
-														<a class="dropdown-item" href="#">Action</a>
-														<a class="dropdown-item" href="#">Another action</a>
-														<a class="dropdown-item" href="#"
-															>Something else here</a
-														>
-													</div>
-												</div>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</div>
+							</form>
 						</div>
 					</div>
 				</div>
@@ -1656,116 +902,5 @@
 		></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
 		<script src="./assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-
-		<script>
-			$(document).ready(() => {
-				$("#menu-show").click(() => {
-					$(".side-nav").show();
-					$("#menu-close").show();
-					return false;
-				});
-
-				$("#menu-close").click(() => {
-					$(".side-nav").hide();
-					// return false;
-				});
-			});
-		</script>
-
-		<script>
-			const ctx = document.getElementById("myChart");
-			const myChart = new Chart(ctx, {
-				type: "bar",
-				data: {
-					labels: [
-						"12 AM",
-						"1 AM",
-						"2 AM",
-						"3 AM",
-						"4 AM",
-						"5 AM",
-						"6 AM",
-						"7 AM",
-						"8 AM",
-					],
-					datasets: [
-						{
-							label: null,
-							data: [1500, 12000, 3000, 5000, 2500, 13000, 12000, 2500, 1800],
-							backgroundColor: "#842A83",
-							borderWidth: 1,
-						},
-						{
-							label: null,
-							data: [1800, 11000, 14000, 9000, 12000, 6000, 10000, 1700, 14000],
-							backgroundColor: "rgba(132, 42, 131, 0.45)",
-							borderWidth: 1,
-						},
-					],
-				},
-				options: {
-					scales: {
-						x: {
-							stacked: true,
-							grid: {
-								display: false,
-							},
-						},
-						y: {
-							beginAtZero: false,
-							min: 100,
-							max: 16000,
-							grid: {
-								display: false,
-							},
-						},
-					},
-					plugins: {
-						legend: {
-							display: false,
-						},
-					},
-				},
-			});
-
-			const ctx2 = document.getElementById("myPieChart");
-			const myPieChart = new Chart(ctx2, {
-				type: "doughnut",
-				data: {
-					labels: ["Android", "IOS"],
-					datasets: [
-						{
-							label: null,
-							data: [5000, 12000],
-							backgroundColor: ["#842A83", "rgba(132, 42, 131, 0.45)"],
-							borderWidth: 1,
-						},
-					],
-				},
-				options: {
-					// scales: {
-					// 	x: {
-					// 		stacked: true,
-					// 		grid: {
-					// 			display: false,
-					// 		},
-					// 	},
-					// 	y: {
-					// 		beginAtZero: false,
-					// 		min: 100,
-					// 		max: 16000,
-					// 		grid: {
-					// 			display: false,
-					// 		},
-					// 	},
-					// },
-					plugins: {
-						legend: {
-							display: false,
-						},
-					},
-				},
-			});
-		</script>
 	</body>
 </html>

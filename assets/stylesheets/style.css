@@ -61,6 +61,30 @@ body {
 	right: 30px;
 }
 
+.btn-primary {
+	width: auto;
+	background-color: #842a83;
+	color: #fff;
+	border: none;
+	font-size: 0.825rem;
+	padding: 0 25px;
+	height: 45px;
+}
+.btn-danger {
+	width: auto;
+	background-color: #d80027;
+	color: #fff;
+	border: none;
+	font-size: 0.825rem;
+	padding: 0 25px;
+	height: 45px;
+}
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .btn-login {
 	height: 60px;
 	background-color: #fff;
@@ -69,6 +93,15 @@ body {
 	font-size: 1rem;
 	border-radius: 100px;
 	width: 100%;
+}
+.btn-suspend {
+	width: auto;
+	background-color: #959595;
+	color: #fff;
+	border: none;
+	font-size: 0.825rem;
+	padding: 0 25px;
+	height: 45px;
 }
 .remember-me-text,
 .forgot-password-text {
@@ -125,6 +158,9 @@ body {
 .nav-menu li a svg {
 	height: 18px;
 	width: 18px;
+}
+.nav-menu li a .dBoard path {
+	fill: #000;
 }
 .menu-header {
 	color: #959595;
@@ -220,7 +256,7 @@ body {
 }
 .dropdown-pointer {
 	top: -28px;
-	right: 15px;
+	right: 43%;
 }
 .dropdown-pointer i {
 	font-size: 24px;
@@ -248,6 +284,14 @@ body {
 	width: 180px;
 	padding: 0 10px;
 	font-size: 0.825rem;
+}
+.filter-field2 {
+	border: 1px solid #e6e6e6;
+	border-radius: 5px;
+	height: 35px;
+	width: auto;
+	padding: 0 10px;
+	font-size: 0.75rem;
 }
 
 .custom-card {
@@ -413,6 +457,8 @@ body {
 
 ul.myBreadcrumb {
 	list-style: none;
+	display: flex;
+	align-items: center;
 }
 
 ul.myBreadcrumb li {
@@ -428,8 +474,242 @@ ul.myBreadcrumb li + li:before {
 }
 
 ul.myBreadcrumb li a {
-	color: green;
 	text-decoration: none;
+}
+ul.myBreadcrumb .active a span {
+	font-weight: 600;
+}
+.search-user-field {
+	border: 1px solid #e6e6e6;
+	height: 35px;
+	padding-right: 15px;
+	padding-left: 15px;
+	border-radius: 5px;
+	width: 100%;
+}
+.users-table-div {
+	background-color: #fcf9f9;
+	border-radius: 20px;
+	padding: 20px;
+}
+.diamond-status {
+	height: 35px;
+	width: 100px;
+	border-radius: 15px;
+	background-color: rgba(7, 87, 161, 0.05);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #0757a2;
+	font-weight: 600;
+}
+.pending-status {
+	height: 35px;
+	width: 100px;
+	border-radius: 15px;
+	background-color: #fcb42a;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-weight: 600;
+}
+.verified-status {
+	height: 35px;
+	width: 100px;
+	border-radius: 15px;
+	background-color: rgba(28, 167, 139, 0.07);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #1ca78b;
+	font-weight: 600;
+}
+.gold-status {
+	height: 35px;
+	width: 100px;
+	border-radius: 15px;
+	background-color: rgba(252, 180, 42, 0.09);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ac7100;
+	font-weight: 600;
+}
+.suspended-status {
+	height: 35px;
+	width: 100px;
+	border-radius: 15px;
+	background-color: #959595;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-weight: 600;
+}
+.users-table {
+	font-size: 0.825rem;
+	border-collapse: separate;
+	border-spacing: 0 15px;
+}
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > thead > tr > th {
+	vertical-align: middle;
+}
+#users-actions {
+	display: none;
+	justify-content: flex-end;
+}
+#users-filter {
+	display: flex;
+}
+
+.about-tab .nav-link {
+	color: #000;
+	background-color: #fcf9f9;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	font-size: 0.825rem;
+	font-weight: 600;
+}
+
+.about-tab .nav-link.active {
+	background-color: #842a83;
+	border-radius: 10px;
+}
+
+.hobby-div {
+	border: 1px solid #e6e6e6;
+	border-radius: 100px;
+	padding: 8px 15px;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 15px;
+}
+/* Yinka's CSS starts here */
+ul,
+li {
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+
+.font-lg {
+	font-size: 1.8rem;
+}
+
+.form_textarea_fields {
+	background-color: #fff;
+	border-radius: 20px;
+	width: 85%;
+	height: 100px;
+	padding-left: 10px;
+	padding-right: 20px;
+	font-weight: 700;
+}
+
+.btn-continue {
+	height: 60px;
+	background-color: #842a83;
+	color: #fff;
+	font-weight: 500;
+	font-size: 1rem;
+	border-radius: 100px;
+	width: 100%;
+}
+
+.custom-card-sm {
+	border: 1px solid #f2f2f2;
+	border-radius: 20px;
+	background-color: #fff;
+	padding: 10.5px 10px;
+	display: flex;
+	flex: 0 0 180px;
+	max-height: 50px;
+}
+
+.circle {
+	border: 1px solid #f2e7f2;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	padding: 7px;
+}
+
+.circle.purple {
+	background-color: #842a83;
+	color: #fff;
+}
+
+.circle.white {
+	background-color: #fff;
+	color: #842a83;
+}
+
+.basic-info {
+	border-bottom: 1px solid #f2f2f2;
+}
+
+.basic-info-inner {
+	border-bottom: 1px solid #842a83;
+}
+
+.add-user-form label {
+	position: absolute;
+	top: -10px;
+	left: 20px;
+	background-color: #fff;
+}
+
+.add-user-form input,
+.add-user-form select {
+	padding: 0px 0px 0px 20px;
+	border: 1px solid #f2e7f2;
+}
+
+.user-profile-wallet {
+	background-color: #842a83;
+	border-radius: 30px;
+	padding: 25px;
+}
+
+.white-circle {
+	height: 32px;
+	width: 32px;
+	border-radius: 50%;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.profile-menu-tabs {
+	background-color: #f7f5fa;
+	padding: 10px;
+	width: 100%;
+}
+.profile-pills .nav-link {
+	color: #000;
+	font-size: 0.825rem;
+	padding: 0.2rem 1rem;
+}
+.profile-pills .nav-link.active {
+	background-color: transparent;
+	color: #842a83;
+	font-size: 0.825rem;
+	border-bottom: 2px solid #842a83;
+	border-radius: 0;
+	font-weight: 600;
+}
+
+/*Yinka's CSS ends here */
+
+@media (min-width: 769px) and (max-width: 1199px) {
+	.search-div {
+		width: 350px;
+	}
 }
 
 @media (max-width: 1199px) {
