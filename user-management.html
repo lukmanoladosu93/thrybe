@@ -801,21 +801,28 @@
 							>
 								<label for="filter" class="font-sm mb-0">Filter by:</label
 								>&nbsp;&nbsp;&nbsp;
-								<select class="filter-field2 font-sm" style="width: auto">
-									<option value="" selected>Status</option>
-									<option value="" selected>Gold Users</option>
-									<option value="" selected>Diamond Users</option>
-									<option value="" selected>Boosted Accounts</option>
-									<option value="" selected>Verified Users</option>
-								</select
-								>&nbsp;&nbsp;&nbsp;
-								<select class="filter-field2 font-sm" style="width: auto">
-									<option value="" selected>Active period</option>
-									<option value="" selected>Last 7 days</option>
-									<option value="" selected>Last 1 month</option>
-									<option value="" selected>Last 1 year</option>
-									<option value="" selected>Custom Date</option>
-								</select>
+								<div class="position-relative">
+									<select class="filter-field2 font-sm" style="width: auto">
+										<option value="">Status</option>
+										<option value="">Gold Users</option>
+										<option value="">Diamond Users</option>
+										<option value="">Boosted Accounts</option>
+										<option value="">Verified Users</option>
+									</select>
+
+									<i class="position-absolute fa fa-angle-down" style="top:10px; right:10px;"></i>
+								</div>
+								&nbsp;&nbsp;&nbsp;
+								<div class="position-relative">
+									<select class="filter-field2 font-sm px-4" style="width: auto">
+										<option value="" selected>Active period</option>
+										<option value="" selected>Last 7 days</option>
+										<option value="" selected>Last 1 month</option>
+										<option value="" selected>Last 1 year</option>
+										<option value="" selected>Custom Date</option>
+									</select>
+									<i class="position-absolute fa fa-angle-down" style="top:10px; right:5px;"></i>
+								</div>
 								<div class="dropdown messages-dropdown ml-4">
 									<button
 										class="btn dropdown-button position-relative"
