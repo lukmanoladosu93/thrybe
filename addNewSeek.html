@@ -36,6 +36,45 @@
 			type="text/css"
 			href="./assets/stylesheets/style.css"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/flagstrap/1.0/css/flags.min.css"
+			integrity="sha512-wLjzMv9GhdAgKsaca/ZRs5sEOVsexDeA0PllsVIgTh+St4sMmrXz4udlz/rMHAN58IMZAXVtzxI112u8QoRHfA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
+		<style>
+			.btn-info,
+			.btn-info:focus,
+			.btn-info:hover,
+			.btn-info:active {
+				background-color: transparent;
+				color: #000;
+				border: none;
+				box-shadow: none;
+				height: 60px;
+				border-radius: 100px 0 0 100px;
+			}
+			.btn-info.dropdown-toggle,
+			.btn-info.dropdown-toggle:active,
+			.btn-info.dropdown-toggle:hover,
+			.btn-info.dropdown-toggle:focus {
+				background-color: transparent;
+				color: #000;
+				border: none;
+				box-shadow: none;
+			}
+			.show > .btn-info.dropdown-toggle,
+			.show > .btn-info.dropdown-toggle:active,
+			.show > .btn-info.dropdown-toggle:hover,
+			.show > .btn-info.dropdown-toggle:focus {
+				background-color: transparent;
+				color: #000;
+				border: none;
+				box-shadow: none;
+			}
+		</style>
 	</head>
 	<body>
 		<aside class="side-nav">
@@ -768,7 +807,7 @@
 								</ul>
 							</div>
 							<div class="mt-4 d-flex align-items-center">
-								<h5>Add a New User</h5>
+								<h5>Create a new Thrybe Seek</h5>
 							</div>
 						</div>
 					</div>
@@ -778,18 +817,18 @@
 						>
 							<div class="d-flex align-item-center ml-2 basic-info-inner">
 								<div
-									class="circle purple d-flex justify-content-center align-items-center"
+									class="circle purple d-flex justify-content-center align-item-center"
 								>
-									<i class="fa fa-check text-white"></i>
+									<span class="text-white">1</span>
 								</div>
+								<h6 class="mt-2 ml-2">Seeker’s Details</h6>
+							</div>
+							<div class="d-flex mr-2">
 								<div
-									class="circle num2 purple d-flex justify-content-center align-item-center ml-2"
+									class="circle white d-flex justify-content-center align-item-center m-2"
 								>
 									<span>2</span>
 								</div>
-								<h6 class="mt-2 ml-2">Advanced Information</h6>
-							</div>
-							<div class="d-flex mr-2">
 								<div
 									class="circle white d-flex justify-content-center align-item-center m-2"
 								>
@@ -804,104 +843,75 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xl-5 col-lg-6 col-md-8">
-							<div class="custom-card">
-								<form>
-									<div class="form-group position-relative mb-4 pl-3 pr-3">
-										<h5 for="userBio" class="mb-3 f-weight-600">User Bio</h5>
-										<p class="mb-4 font-sm2">
-											Write something interesting about this user
-										</p>
-										<textarea
-											class="form_textarea_fields pl-4 pt-3 w-100"
-											placeholder="Tell us about yourself"
-											name="userBio"
-										></textarea>
-									</div>
-									<hr />
-									<div class="form-group position-relative mb-4 pl-3 pr-3">
-										<h5 class="mt-4 f-weight-600">Employment</h5>
-										<p class="mb-4 font-sm2">
-											Write about this user's work experience
-										</p>
-										<div class="d-flex justify-content-between">
-											<span class="font-sm"
-												><img
-													src="./assets/images/industry-icon.svg"
-													class="img-fluid mr-2"
-													alt="industry"
-												/>Industry</span
-											>
-											<a href="#" class="font-sm text-dark f-weight-600"
-												>Select <i class="fa fa-angle-right ml-2"></i
-											></a>
-										</div>
-										<hr />
-										<div class="d-flex justify-content-between">
-											<span class="font-sm"
-												><img
-													src="./assets/images/job-icon.svg"
-													class="img-fluid mr-2"
-													alt="industry"
-												/>Job</span
-											>
-											<a href="#" class="font-sm text-dark f-weight-600"
-												>Select <i class="fa fa-angle-right ml-2"></i
-											></a>
-										</div>
-									</div>
-									<div class="form-group position-relative mt-4 mb-4 pl-3 pr-3">
-										<label class="mb-3 mt-2"><strong>Photo Album</strong></label
-										><br />
-										<p class="mb-4">Profiles with picture have more chances</p>
+						<div class="col-xl-5 col-md-8">
+							<div class="custom-card mb-3">
+								<form class="add-user-form">
+									<h5 for="userBio" class="mb-3 f-weight-600 px-3 mt-3">
+										Details about the Seeker
+									</h5>
 
-										<div class="grid-container">
-											<div class="item1">
-												<img
-													class="img-fluid"
-													src="./assets/images/profileUploadPH1.svg"
-													id="upload-img"
-												/>
-												<input
-													type="file"
-													name="file_upload"
-													id="file_upload"
-													style="display: none"
-												/>
-											</div>
-											<div class="item2">
-												<img
-													class="img-fluid"
-													src="./assets/images/profileUploadPH2.svg"
-												/>
-											</div>
-											<div class="item3">
-												<img
-													class="img-fluid"
-													src="./assets/images/profileUploadPH2.svg"
-												/>
-											</div>
-											<div class="item4">
-												<img
-													class="img-fluid"
-													src="./assets/images/profileUploadPH2.svg"
-												/>
-											</div>
-											<div class="item5">
-												<img
-													class="img-fluid"
-													src="./assets/images/profileUploadPH2.svg"
-												/>
-											</div>
-											<div class="item6">
-												<img
-													class="img-fluid"
-													src="./assets/images/profileUploadPH2.svg"
-												/>
+									<div
+										class="mt-4 poster-div d-flex align-items-center position-relative mb-4"
+									>
+										<h6 class="mb-0">Post as</h6>
+										<div class="position-absolute" style="right: -18px; top: 0">
+											<div
+												class="form-group position-relative mb-4 pl-3 pr-3"
+												style="min-width: 200px"
+											>
+												<select
+													class="form_input_fields bg-transparent"
+													type="select"
+													name="gender"
+													style="
+														border: none;
+														border-radius: 20px;
+														outline: none;
+													"
+												>
+													<option>Anonymous</option>
+													<option>Select a user</option>
+												</select>
+												<i
+													class="fa fa-angle-down position-absolute form-select-dropdown"
+													style="top: 23px"
+												></i>
 											</div>
 										</div>
+									</div>
+									<div class="poster-div py-3 h-auto font-sm2 mb-5">
+										Mauris convallis, leo eget dignissim semper, orci ipsum
+										maximus dolor.
+									</div>
+									<p class="font-sm mb-5">
+										Kindly highlight key details about yourself using the box
+										below. e.g: Blood Genotype, Disabilities, special needs etc.
+										(NOTE: You can add as many as possible)
+									</p>
+									<div class="form-group position-relative mb-4 px-3">
+										<label for="firstName">Key info</label>
+										<input
+											class="form_input_fields"
+											type="text"
+											name="firstName"
+											value="Blood Genotype is AA"
+											readonly
+										/>
+									</div>
+									<div class="form-group position-relative mb-4 pl-3 pr-3">
+										<label for="lastName">Key info</label>
+										<input
+											class="form_input_fields"
+											type="text"
+											name="lastName"
+											value="I weigh 1000Lbs"
+										/>
+									</div>
+									<div class="px-3">
+										<button class="btn btn-add-more">Add more</button>
 									</div>
 									<div class="form-group mt-4 px-3">
+										<label for="submit"></label>
 										<input
 											type="submit"
 											class="btn btn-continue"
@@ -928,6 +938,12 @@
 		></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
 		<script src="./assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/flagstrap/1.0/js/jquery.flagstrap.min.js"
+			integrity="sha512-jPZiVBpHbOc0vbOJ7AMjoN8/9ynXNjLn4j2PeOWFrfDYdq896sv4CaFzTOrHwLa1fsI9m74QUf3XdG5V4JKjZw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
 
 		<script>
 			$(document).ready(() => {
@@ -953,6 +969,31 @@
 						$("#users-actions").hide();
 					}
 				});
+			});
+
+			$("#demo").flagStrap();
+
+			$(".select-country").flagStrap({
+				countries: {
+					NG: "NGN",
+					AU: "AUD",
+					CA: "CAD",
+					SG: "SGD",
+					GB: "GBP",
+				},
+				buttonSize: "btn-sm",
+				buttonType: "btn-info",
+				labelMargin: "10px",
+				scrollable: false,
+				scrollableHeight: "350px",
+			});
+
+			$("#advanced").flagStrap({
+				buttonSize: "btn-lg",
+				buttonType: "btn-primary",
+				labelMargin: "20px",
+				scrollable: false,
+				scrollableHeight: "350px",
 			});
 
 			$("#upload-img").click(() => {

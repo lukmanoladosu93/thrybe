@@ -68,6 +68,10 @@ body {
   top: 17px;
   right: 30px;
 }
+.input-decor3 {
+  top: 0;
+  left: 19px;
+}
 
 .btn-primary {
   width: auto;
@@ -304,6 +308,14 @@ body {
 
 .custom-card {
   border: 1px solid #f2f2f2;
+  border-radius: 30px;
+  background-color: #fff;
+  padding: 20.5px 20px;
+  width: 100%;
+}
+
+.white-bg-card {
+  border: none;
   border-radius: 10px;
   background-color: #fff;
   padding: 20.5px 20px;
@@ -615,6 +627,17 @@ ul.myBreadcrumb .active a span {
   color: #7b61ff;
   font-weight: 600;
 }
+.expired-status {
+  height: 35px;
+  width: 100px;
+  border-radius: 15px;
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #959595;
+  font-weight: 600;
+}
 .users-table {
   font-size: 0.825rem;
   border-collapse: separate;
@@ -701,8 +724,8 @@ li {
   background-color: #fff;
   padding: 10.5px 10px;
   display: flex;
-  flex: 0 0 180px;
   max-height: 50px;
+  align-items: center;
 }
 
 .circle {
@@ -734,12 +757,20 @@ li {
 .add-user-form label {
   position: absolute;
   top: -10px;
-  left: 30px;
+  left: 20px;
   background-color: #fff;
+  font-size: 0.825rem;
 }
 
 .add-user-form input,
 .add-user-form select {
+  padding: 0px 0px 0px 20px;
+  border: 1px solid #f2e7f2;
+  font-size: 0.825rem;
+}
+
+.add-user-form .tel-field {
+  padding-left: 110px !important;
   padding: 0px 0px 0px 20px;
   border: 1px solid #f2e7f2;
 }
@@ -777,7 +808,48 @@ li {
   border-radius: 0;
   font-weight: 600;
 }
+.h-26 {
+  height: 26px;
+}
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+}
+
+.form-select-dropdown {
+  right: 35px;
+  top: 20px;
+  z-index: 9;
+}
+.bg-transparent {
+  background-color: transparent;
+}
+select.form_input_fields {
+  z-index: 10;
+}
+.custom-card-sm img {
+  height: 24px;
+  width: 24px;
+}
+
+.poster-div {
+  height: 60px;
+  border-radius: 20px;
+  border: 1px solid #f2f2f2;
+  padding: 0 20px;
+}
+.btn-add-more {
+  height: 60px;
+  color: #842a83;
+  font-size: 0.825rem;
+  font-weight: 600;
+  border: 1px solid #e6e6e6;
+  width: 100%;
+  border-radius: 100px;
+}
 .talk-authors {
   height: 70px;
   width: 100%;
@@ -898,4 +970,36 @@ li {
   .search-div {
     display: none;
   }
+}
+
+.item1 {
+  grid-area: main;
+}
+.item2 {
+  grid-area: image2;
+}
+.item3 {
+  grid-area: image3;
+}
+.item4 {
+  grid-area: image4;
+}
+.item5 {
+  grid-area: image5;
+}
+.item6 {
+  grid-area: image6;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "main main main main image2 image2"
+    "main main main main image3 image3"
+    "image4 image4 image5 image5 image6 image6";
+  gap: 10px;
+}
+
+.grid-container > div > img {
+  width: 100%;
 }
