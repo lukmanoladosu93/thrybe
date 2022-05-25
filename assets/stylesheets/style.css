@@ -787,35 +787,6 @@ li {
   margin-right: -10px;
 }
 
-.inner-card.green {
-  background-color: #32ab45;
-  max-width: 55px;
-  height: 27px;
-  display: inline-block;
-  border-radius: 30px;
-}
-
-.inner-card.red {
-  background-color: #d80027;
-  max-width: 55px;
-  height: 27px;
-  display: inline-block;
-  border-radius: 30px;
-}
-
-.inner-card.orange {
-  background-color: #fcb42a;
-  max-width: 55px;
-  height: 27px;
-  display: inline-block;
-  border-radius: 30px;
-}
-
-.inner-card > span {
-  margin-left: 10px;
-  color: #fff;
-}
-
 .talk-media {
   position: absolute;
   bottom: 0;
@@ -875,6 +846,15 @@ li {
   border: 1px solid;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+}
+
+.inner-image2 {
+  bottom: 0;
+  left: 0;
+  border: 1px solid rgb(4, 3, 3);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: rgba(4, 3, 3, 0.4);
 }
 /*Yinka's CSS ends here */
 
