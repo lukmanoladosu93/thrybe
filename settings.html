@@ -36,6 +36,46 @@
       type="text/css"
       href="./assets/stylesheets/style.css"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flagstrap/1.0/css/flags.min.css"
+      integrity="sha512-wLjzMv9GhdAgKsaca/ZRs5sEOVsexDeA0PllsVIgTh+St4sMmrXz4udlz/rMHAN58IMZAXVtzxI112u8QoRHfA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      .btn-info,
+      .btn-info:focus,
+      .btn-info:hover,
+      .btn-info:active {
+        background-color: transparent;
+        color: #000;
+        border: none;
+        box-shadow: none;
+        height: 60px;
+        border-radius: 100px 0 0 100px;
+      }
+      .btn-info.dropdown-toggle,
+      .btn-info.dropdown-toggle:active,
+      .btn-info.dropdown-toggle:hover,
+      .btn-info.dropdown-toggle:focus {
+        background-color: transparent;
+        color: #000;
+        border: none;
+        box-shadow: none;
+      }
+      .show > .btn-info.dropdown-toggle,
+      .show > .btn-info.dropdown-toggle:active,
+      .show > .btn-info.dropdown-toggle:hover,
+      .show > .btn-info.dropdown-toggle:focus {
+        background-color: transparent;
+        color: #000;
+        border: none;
+        box-shadow: none;
+      }
+    </style>
   </head>
   <body>
     <aside class="side-nav">
@@ -778,7 +818,7 @@
                     <i class="fa fa-pencil" aria-hidden="true"></i>
                     <i class="fa fa-trash mr-1" aria-hidden="true"></i>
                   </div>
-                  <div class="form-group position-relative m-1">
+                  <div class="form-group position-relative mb-3 px-3">
                     <label for="fullName">Full Name</label>
                     <input
                       class="form_input_fields"
@@ -786,14 +826,14 @@
                       name="fullName"
                     />
                   </div>
-                  <div class="form-group position-relative p-2 m-1">
+                  <div class="form-group position-relative px-3 mb-2">
                     <textarea
                       class="form_textarea_fields pt-3 w-100"
                       placeholder="Tell us about yourself"
                       name="userBio"
                     ></textarea>
                   </div>
-                  <div class="form-group m-1">
+                  <div class="form-group m-1 px-3">
                     <label for="Modify"></label>
                     <input
                       type="submit"
@@ -805,8 +845,8 @@
               </div>
               <div class="custom-card mb-3">
                 <form>
-                  <h6 class="mb-3">Contact Information</h6>
-                  <div class="form-group position-relative">
+                  <h6 class="mb-4">Contact Information</h6>
+                  <div class="form-group position-relative px-3">
                     <input
                       type="text"
                       class="form_input_fields"
@@ -829,19 +869,19 @@
                       </div>
                     </div>
                   </div>
-                  <div class="form-group position-relative">
+                  <div class="form-group position-relative mb-1 px-3">
                     <input
                       class="form_input_fields tel-field"
                       type="tel"
                       name="telephone"
                     />
                     <div
-                      class="position-absolute d-flex input-decor3 align-items-center h-100"
+                      class="position-absolute d-flex input-decor3 align-items-center"
                     >
                       <div
                         data-input-name="country2"
                         data-selected-country="US"
-                        class="select-country flagstrap"
+                        class="select-country"
                         data-scrollable="true"
                         data-scrollable-height="250px"
                       ></div>
@@ -854,7 +894,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="form-group">
+                  <div class="form-group px-3">
                     <label for="Modify"></label>
                     <input
                       type="submit"
@@ -867,7 +907,7 @@
               <div class="custom-card mb-3">
                 <form>
                   <h6>Password Management</h6>
-                  <div class="form-group position-relative mt-4">
+                  <div class="form-group px-3 position-relative mt-3 mb-1">
                     <input
                       type="password"
                       class="form_input_fields"
@@ -900,7 +940,7 @@
                         alt="view-passowrd"
                     /></a>
                   </div>
-                  <div class="form-group">
+                  <div class="form-group px-3">
                     <label for="Modify"></label>
                     <input
                       type="submit"

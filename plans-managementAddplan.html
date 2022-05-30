@@ -3,7 +3,7 @@
   <head>
     <!-- Basic Page Needs
     ================================================== -->
-    <title>Thrybe Support</title>
+    <title>Plans Management - Add Plan</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -36,6 +36,45 @@
       type="text/css"
       href="./assets/stylesheets/style.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flagstrap/1.0/css/flags.min.css"
+      integrity="sha512-wLjzMv9GhdAgKsaca/ZRs5sEOVsexDeA0PllsVIgTh+St4sMmrXz4udlz/rMHAN58IMZAXVtzxI112u8QoRHfA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      .btn-info,
+      .btn-info:focus,
+      .btn-info:hover,
+      .btn-info:active {
+        background-color: transparent;
+        color: #000;
+        border: none;
+        box-shadow: none;
+        height: 60px;
+        border-radius: 100px 0 0 100px;
+      }
+      .btn-info.dropdown-toggle,
+      .btn-info.dropdown-toggle:active,
+      .btn-info.dropdown-toggle:hover,
+      .btn-info.dropdown-toggle:focus {
+        background-color: transparent;
+        color: #000;
+        border: none;
+        box-shadow: none;
+      }
+      .show > .btn-info.dropdown-toggle,
+      .show > .btn-info.dropdown-toggle:active,
+      .show > .btn-info.dropdown-toggle:hover,
+      .show > .btn-info.dropdown-toggle:focus {
+        background-color: transparent;
+        color: #000;
+        border: none;
+        box-shadow: none;
+      }
+    </style>
   </head>
   <body>
     <aside class="side-nav">
@@ -115,7 +154,7 @@
               ><span class="pl-4">Users</span>
             </a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a href="#" class="nav-link">
               <i class=""
                 ><svg
@@ -149,7 +188,7 @@
               ><span class="pl-4">Talks</span>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a href="#" class="nav-link">
               <i class=""
                 ><svg
@@ -743,138 +782,139 @@
           </div>
         </div>
       </header>
-
-      <!-- Main Content-->
       <div class="main-content">
         <div class="container-fluid">
-          <div class="row mb-2">
-            <div class="col-12 mt-5 mb-3">
-              <ul class="myBreadcrumb p-0">
-                <li>
-                  <a href="#" class="d-flex align-items-center"
-                    ><i class="fa fa-home text-darkGrey"></i
-                    ><span class="font-xs pl-2 f-weight-500 mt-1 text-dark"
-                      >Home</span
-                    ></a
-                  >
-                </li>
-                <li class="active">
-                  <a href="#" class="d-flex align-items-center"
-                    ><span class="font-xs f-weight-500 mt-1 text-dark"
-                      >Support</span
-                    ></a
-                  >
-                </li>
-              </ul>
+          <div class="row mb-3">
+            <div class="col-12 mt-5">
+              <div class="d-flex align-item-center">
+                <ul class="d-flex">
+                  <li class="mr-2">
+                    <i class="fa fa-home"></i
+                    ><span class="font-xs pl-2 f-weight-500 mt-1">Home</span>
+                  </li>
+                  <li class="mr-2">
+                    <i class="fa fa-chevron-right font-xs"></i>
+                    <span class="font-xs pl-2 f-weight-500 mt-1"
+                      >Price Management</span
+                    >
+                  </li>
+                  <li class="mr-2">
+                    <i class="fa fa-chevron-right font-xs"></i>
+                    <span class="font-xs pl-2 f-weight-500 mt-1"
+                      ><strong>Create New</strong></span
+                    >
+                  </li>
+                </ul>
+              </div>
               <div class="mt-4 d-flex align-items-center">
-                <h5>
-                  Neque Porro quisquam est qui dolorem ipsum quia dolor sit
-                  <br />
-                  amet, cosectetur, adipiscii velit.
-                </h5>
+                <h5>Create a new Subscription Plan</h5>
               </div>
             </div>
           </div>
-          <div class="row flex-column mt-2 mb-3">
-            <div class="col-xl-8 col-lg-10">
-              <div
-                class="d-flex justify-content-between align-items-center px-3"
-              >
-                <div class="d-flex align-items-center" style="gap: 25px">
-                  <img
-                    style="width: 20px; height: 20px"
-                    class="img-fluid"
-                    src="./assets/images/back-arrow-icon.svg"
-                    alt=""
-                  />
-                  <span>Filter By</span>
-                  <i class="fa fa-trash"></i>
-                  <img
-                    class="img-fluid"
-                    src="./assets/images/arrow-squareup.svg"
-                    style="width: 20px; height: 20px"
-                    alt="arrow-squareup"
-                  />
-                  <img
-                    class="img-fluid"
-                    src="./assets/images/check-icon.svg"
-                    style="width: 20px; height: 20px"
-                    alt="check-icon"
-                  />
-                  <img
-                    class="img-fluid"
-                    src="./assets/images/arrow-curveback.svg"
-                    style="width: 20px; height: 20px"
-                    alt="arrow-curveback"
-                  />
+          <div class="row mb-5">
+            <div
+              class="col-xl-5 col-md-8 d-flex justify-content-between align-item-center mt-3 basic-info"
+            >
+              <div class="d-flex align-item-center ml-2 basic-info-inner">
+                <div
+                  class="circle purple d-flex justify-content-center align-item-center"
+                >
+                  <span class="text-white">1</span>
                 </div>
-                <div class="d-flex align-items-center" style="gap: 20px">
-                  <img
-                    class="img-fluid"
-                    src="./assets/images/back-icon.svg"
-                    style="width: 20px; height: 20px"
-                    alt="back-icon"
-                  />
-                  <span>1 of 36</span>
-                  <img
-                    class="img-fluid"
-                    src="./assets/images/front-icon.svg"
-                    style="width: 20px; height: 13px"
-                    alt="front-icon"
-                  />
+                <h6 class="mt-2 ml-2">Plans Basic Details</h6>
+              </div>
+              <div class="d-flex mr-2">
+                <div
+                  class="circle white d-flex justify-content-center align-item-center m-2"
+                >
+                  <span>2</span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row mt-2">
-            <div class="col-xl-8 col-lg-10 p-2">
-              <div class="custom-card" style="background-color: #f7f5fa">
-                <div class="d-flex justify-content-between mb-3 pr-3">
-                  <div class="d-flex">
-                    <img
-                      src="./assets/images/members-avatar1.svg"
-                      class="img-fluid"
-                      alt="members-avatar"
+          <div class="row">
+            <div class="col-xl-5 col-md-8">
+              <div class="custom-card mb-3">
+                <form class="add-user-form pt-3">
+                  <div class="form-group position-relative mb-4 pl-3 pr-3">
+                    <label for="planName">Plan Name</label>
+                    <input
+                      class="form_input_fields"
+                      type="text"
+                      name="planName"
+                      placeholder="Tiny Balls"
                     />
-                    <div class="d-flex flex-column pl-2">
-                      <span class="f-weight-600 font-sm2">From Retsilo</span>
-                      <span class="font-sm">Support</span>
+                  </div>
+                  <div class="form-group position-relative mb-4 pl-3 pr-3">
+                    <textarea
+                      class="form_textarea_fields pl-4 pt-3 w-100"
+                      placeholder="lorem lorem lorem lorem"
+                      name="userBio"
+                    ></textarea>
+                  </div>
+                  <div class="form-group position-relative mb-4 pl-3 pr-3">
+                    <label for="gender">Payment Plan Type</label>
+                    <select
+                      class="form_input_fields bg-transparent"
+                      type="select"
+                      name="gender"
+                    >
+                      <option>Subscription</option>
+                    </select>
+                    <i
+                      class="fa fa-angle-down position-absolute form-select-dropdown"
+                    ></i>
+                  </div>
+                  <div class="form-group position-relative mb-4 pl-3 pr-3">
+                    <label for="price">Price(in Token)</label>
+                    <input
+                      class="form_input_fields"
+                      type="text"
+                      name="price"
+                      placeholder="₦3,405"
+                    />
+                    <div
+                      class="position-absolute pt-3 d-flex"
+                      style="top: 0; right: 30px; gap: 5px"
+                    >
+                      <div
+                        class="mt-1 mr-4"
+                        style="
+                          width: 1px;
+                          height: 25px;
+                          background-color: #f2f2f2;
+                        "
+                      ></div>
+                      <div>
+                        <p class="font-sm2 m-0 f-weight-600">125</p>
+                        <p class="font-sm pb-3">Value</p>
+                      </div>
                     </div>
                   </div>
-                  <div>
-                    <img
-                      src="./assets/images/calender-icon.svg"
-                      alt="calendar"
-                    />
-                    <span class="f-weight-600 font-sm2 ml-2"
-                      >22/2/2022 13:45PM</span
-                    >
+                  <div class="form-group mb-4 px-3">
+                    <h6 class="mb-3 f-weight-600 mt-4">Select color option</h6>
+                    <div class="mb-3" style="overflow-x: auto">
+                      <div class="color-grid">
+                        <a href="#" class="color-grid-item active"></a>
+                        <a href="#" class="color-grid-item"></a>
+                        <a href="#" class="color-grid-item"></a>
+                        <a href="#" class="color-grid-item"></a>
+                        <a href="#" class="color-grid-item"></a>
+                        <a href="#" class="color-grid-item"></a>
+                        <a href="#" class="color-grid-item"></a>
+                        <a href="#" class="color-grid-item"></a>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div
-                  class="p-4"
-                  style="background-color: #ffffff; border-radius: 10px"
-                >
-                  <p class="font-sm2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum iste corporis voluptas quasi perspiciatis possimus
-                    totam tempora neque, ullam aliquam exercitationem cumque
-                    placeat omnis deserunt quas, quia recusandae repudiandae.
-                    Fuga!
-                  </p>
-                  <p class="font-sm2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repudiandae rem, fugiat omnis voluptatem nemo consequuntur
-                    doloribus non possimus libero laboriosam accusantium quam
-                    placeat vero qui officiis. Minima totam facilis maiores?
-                  </p>
-                  <p class="font-sm2">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Magnam, rem. Vel nostrum, hic laudantium repellat officiis
-                    minima? Inventore, soluta? Velit impedit corporis inventore
-                    eum asperiores reiciendis odio voluptates expedita nemo.
-                  </p>
-                </div>
+                  <div class="form-group mt-4">
+                    <label for="submit"></label>
+                    <input
+                      type="submit"
+                      class="btn btn-continue"
+                      value="Continue"
+                    />
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -894,6 +934,12 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
     <script src="./assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/flagstrap/1.0/js/jquery.flagstrap.min.js"
+      integrity="sha512-jPZiVBpHbOc0vbOJ7AMjoN8/9ynXNjLn4j2PeOWFrfDYdq896sv4CaFzTOrHwLa1fsI9m74QUf3XdG5V4JKjZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <script>
       $(document).ready(() => {
@@ -919,6 +965,35 @@
             $("#users-actions").hide();
           }
         });
+      });
+
+      $("#demo").flagStrap();
+
+      $(".select-country").flagStrap({
+        countries: {
+          NG: "NGN",
+          AU: "AUD",
+          CA: "CAD",
+          SG: "SGD",
+          GB: "GBP",
+        },
+        buttonSize: "btn-sm",
+        buttonType: "btn-info",
+        labelMargin: "10px",
+        scrollable: false,
+        scrollableHeight: "350px",
+      });
+
+      $("#advanced").flagStrap({
+        buttonSize: "btn-lg",
+        buttonType: "btn-primary",
+        labelMargin: "20px",
+        scrollable: false,
+        scrollableHeight: "350px",
+      });
+
+      $("#upload-img").click(() => {
+        $("#file_upload").click();
       });
     </script>
   </body>
