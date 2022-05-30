@@ -3,7 +3,7 @@
   <head>
     <!-- Basic Page Needs
     ================================================== -->
-    <title>Add User</title>
+    <title>Thrybe Room - Add a New Room</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -795,7 +795,7 @@
                   <li class="mr-2">
                     <i class="fa fa-chevron-right font-xs"></i>
                     <span class="font-xs pl-2 f-weight-500 mt-1"
-                      >Users Management</span
+                      >Thrybe Room</span
                     >
                   </li>
                   <li class="mr-2">
@@ -807,7 +807,7 @@
                 </ul>
               </div>
               <div class="mt-4 d-flex align-items-center">
-                <h5>Add a New User</h5>
+                <h5>Create a New Thrybe Room</h5>
               </div>
             </div>
           </div>
@@ -821,7 +821,7 @@
                 >
                   <span class="text-white">1</span>
                 </div>
-                <h6 class="mt-2 ml-2">Basic Information</h6>
+                <h6 class="mt-2 ml-2">Seeker's Details</h6>
               </div>
               <div class="d-flex mr-2">
                 <div
@@ -834,11 +834,6 @@
                 >
                   <span>3</span>
                 </div>
-                <div
-                  class="circle white d-flex justify-content-center align-item-center m-2"
-                >
-                  <span>4</span>
-                </div>
               </div>
             </div>
           </div>
@@ -846,91 +841,65 @@
             <div class="col-xl-5 col-md-8">
               <div class="custom-card mb-3">
                 <form class="add-user-form">
-                  <div class="d-flex align-item-center mb-5 pr-3">
-                    <a href="#">
-                      <img
-                        src="./assets/images/fileUpload.svg"
-                        id="upload-img"
-                      />
-                    </a>
-                    <input
-                      type="file"
-                      name="file_upload"
-                      id="file_upload"
-                      style="display: none"
+                  <div class="form-group mb-4">
+                    <img
+                      src="./assets/images/addroomUpload.svg"
+                      alt="addroomUpload"
                     />
-                    <h6 class="d-flex align-self-center ml-2">Upload Avatar</h6>
                   </div>
                   <div class="form-group position-relative mb-4 pl-3 pr-3">
-                    <label for="firstName">First Name</label>
+                    <label for="roomName">Room Name</label>
                     <input
                       class="form_input_fields"
                       type="text"
-                      name="firstName"
+                      name="roomName"
+                      placeholder="Boys Secret Club"
                     />
                   </div>
-                  <div class="form-group position-relative mb-4 pl-3 pr-3">
-                    <label for="lastName">Last Name</label>
-                    <input
-                      class="form_input_fields"
-                      type="text"
-                      name="lastName"
-                    />
+                  <div class="form-group">
+                    <textarea
+                      class="form_textarea_fields ml-3"
+                      style="width: 91%"
+                      placeholder="Lorem Lorem Ipsum Ipsum"
+                    ></textarea>
                   </div>
                   <div class="form-group position-relative mb-4 pl-3 pr-3">
-                    <input
-                      class="form_input_fields tel-field"
-                      type="tel"
-                      name="telephone"
-                    />
-                    <div
-                      class="position-absolute d-flex input-decor3 align-items-center"
-                    >
-                      <div
-                        data-input-name="country2"
-                        data-selected-country="US"
-                        class="select-country"
-                        data-scrollable="true"
-                        data-scrollable-height="250px"
-                      ></div>
-                      <div class="pl-1">
-                        <img
-                          src="./assets/images/black-line-vert.svg"
-                          class="img-fluid"
-                          alt="vert-line"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group position-relative mb-4 pl-3 pr-3">
-                    <label for="gender">Gender</label>
+                    <label for="roomPrivacy">Room Privacy</label>
                     <select
                       class="form_input_fields bg-transparent"
                       type="select"
-                      name="gender"
+                      name="roomPrivacy"
                     >
-                      <option>Male</option>
-                      <option>Female</option>
+                      <option>Private</option>
+                      <option>Public</option>
                     </select>
                     <i
                       class="fa fa-angle-down position-absolute form-select-dropdown"
                     ></i>
                   </div>
                   <div class="form-group position-relative mb-4 pl-3 pr-3">
-                    <label for="age">Age</label>
+                    <label for="roomAuthor">Select Room Author</label>
                     <select
                       class="form_input_fields bg-transparent"
                       type="select"
-                      name="age"
+                      name="roomAuthor"
                     >
-                      <option>27 Years Old</option>
-                      <option>26 Years Old</option>
+                      <option>Select User</option>
+                      <option>Nusaiba Sabiu</option>
                     </select>
                     <i
                       class="fa fa-angle-down position-absolute form-select-dropdown"
                     ></i>
                   </div>
-                  <div class="form-group mt-4 px-3">
+                  <div class="form-group position-relative mb-4 pl-3 pr-3">
+                    <label for="date"></label>
+                    <input
+                      class="form_input_fields pr-3"
+                      type="datetime-local"
+                      name="date"
+                    />
+                  </div>
+                  <div class="form-group mt-4">
                     <label for="submit"></label>
                     <input
                       type="submit"

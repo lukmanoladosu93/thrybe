@@ -3,7 +3,7 @@
   <head>
     <!-- Basic Page Needs
     ================================================== -->
-    <title>Add User</title>
+    <title>Thrybe Room - Add a New Room</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -36,45 +36,6 @@
       type="text/css"
       href="./assets/stylesheets/style.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/flagstrap/1.0/css/flags.min.css"
-      integrity="sha512-wLjzMv9GhdAgKsaca/ZRs5sEOVsexDeA0PllsVIgTh+St4sMmrXz4udlz/rMHAN58IMZAXVtzxI112u8QoRHfA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <style>
-      .btn-info,
-      .btn-info:focus,
-      .btn-info:hover,
-      .btn-info:active {
-        background-color: transparent;
-        color: #000;
-        border: none;
-        box-shadow: none;
-        height: 60px;
-        border-radius: 100px 0 0 100px;
-      }
-      .btn-info.dropdown-toggle,
-      .btn-info.dropdown-toggle:active,
-      .btn-info.dropdown-toggle:hover,
-      .btn-info.dropdown-toggle:focus {
-        background-color: transparent;
-        color: #000;
-        border: none;
-        box-shadow: none;
-      }
-      .show > .btn-info.dropdown-toggle,
-      .show > .btn-info.dropdown-toggle:active,
-      .show > .btn-info.dropdown-toggle:hover,
-      .show > .btn-info.dropdown-toggle:focus {
-        background-color: transparent;
-        color: #000;
-        border: none;
-        box-shadow: none;
-      }
-    </style>
   </head>
   <body>
     <aside class="side-nav">
@@ -130,7 +91,7 @@
           >Management <i class="fa fa-angle-down"></i
         ></a>
         <ul class="nav-menu mt-3">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a href="#" class="nav-link">
               <i class=""
                 ><svg
@@ -154,7 +115,7 @@
               ><span class="pl-4">Users</span>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a href="#" class="nav-link">
               <i class=""
                 ><svg
@@ -795,7 +756,7 @@
                   <li class="mr-2">
                     <i class="fa fa-chevron-right font-xs"></i>
                     <span class="font-xs pl-2 f-weight-500 mt-1"
-                      >Users Management</span
+                      >Thrybe Room</span
                     >
                   </li>
                   <li class="mr-2">
@@ -807,138 +768,130 @@
                 </ul>
               </div>
               <div class="mt-4 d-flex align-items-center">
-                <h5>Add a New User</h5>
+                <h5>Create a new Thrybe Room</h5>
               </div>
             </div>
           </div>
           <div class="row mb-5">
             <div
-              class="col-xl-5 col-md-8 d-flex justify-content-between align-item-center mt-3 basic-info"
+              class="col-xl-5 col-md-8 d-flex align-item-center mt-3 basic-info"
             >
               <div class="d-flex align-item-center ml-2 basic-info-inner">
                 <div
-                  class="circle purple d-flex justify-content-center align-item-center"
+                  class="circle purple d-flex justify-content-center align-item-center mb-2"
                 >
-                  <span class="text-white">1</span>
-                </div>
-                <h6 class="mt-2 ml-2">Basic Information</h6>
-              </div>
-              <div class="d-flex mr-2">
-                <div
-                  class="circle white d-flex justify-content-center align-item-center m-2"
-                >
-                  <span>2</span>
+                  <i
+                    class="fa fa-check mt-1 f-weight-500"
+                    aria-hidden="true"
+                  ></i>
                 </div>
                 <div
-                  class="circle white d-flex justify-content-center align-item-center m-2"
+                  class="circle purple d-flex justify-content-center align-item-center mb-2 ml-1"
+                >
+                  <i
+                    class="fa fa-check mt-1 f-weight-500"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <div
+                  class="circle purple d-flex justify-content-center align-item-center mb-2 ml-1"
                 >
                   <span>3</span>
                 </div>
-                <div
-                  class="circle white d-flex justify-content-center align-item-center m-2"
-                >
-                  <span>4</span>
-                </div>
+                <h6 class="mt-2 ml-2">Preview</h6>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="col-xl-5 col-md-8">
-              <div class="custom-card mb-3">
-                <form class="add-user-form">
-                  <div class="d-flex align-item-center mb-5 pr-3">
-                    <a href="#">
+            <div class="custom-card col-xl-5 col-md-8 ml-3">
+              <div class="custom-card">
+                <div class="mb-4">
+                  <img
+                    src="./assets/images/addroomUpload.svg"
+                    alt="addroomUpload"
+                    class="mb-2"
+                  />
+                  <h6 class="f-weight-800 mb-4 mt-2">Boys Secret Club</h6>
+                </div>
+                <hr class="mb-4" />
+                <div class="mt-2 mb-2">
+                  <div class="mb-4">
+                    <h5 class="font-sm2 f-weight-800 mt-2">
+                      <u><strong>Description</strong></u>
+                    </h5>
+                    <p class="font-sm">
+                      Lorem ipsum dolor amet. Lorem ipsum dolor amet. Lorem
+                      ipsum dolor amet
+                    </p>
+                  </div>
+                  <div>
+                    <h6 class="font-sm2 f-weight-600"><u>Rules</u></h6>
+                    <ol class="pl-2">
+                      <li class="font-sm">
+                        1. Always Keep quiet when the speaker talk
+                      </li>
+                      <li class="font-sm">
+                        2. Mute your mic to avert distractions
+                      </li>
+                      <li class="font-sm">
+                        3. Raise hand when you want to speak
+                      </li>
+                      <li class="font-sm">4. No abusive word. Be respectful</li>
+                    </ol>
+                  </div>
+                </div>
+                <hr />
+                <div class="mt-4 mb-4">
+                  <img src="./assets/images/clock-icon.svg" alt="" />
+                  <span class="font-sm2 f-weight-800">22/2/2022 07:30AM</span>
+                </div>
+                <hr class="mb-4" />
+                <div class="d-flex flex-column mt-2 mb-4">
+                  <h6 class="f-weight-700">Room Author</h6>
+                  <div>
+                    <img
+                      src="./assets/images/author-pic.svg"
+                      alt="author-pic"
+                      style="
+                        width: 50px;
+                        margin-right: -10px;
+                        margin-left: -13px;
+                      "
+                    /><span>Nusaiba Sabiu</span>
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <h6 class="f-weight-700 mb-3">Selected Users</h6>
+                  <div class="d-flex align-items-center pl-3">
+                    <div>
                       <img
-                        src="./assets/images/fileUpload.svg"
-                        id="upload-img"
+                        src="./assets/images/members-avatar1.svg"
+                        alt="membericon"
+                        style="margin-left: -20px"
                       />
-                    </a>
-                    <input
-                      type="file"
-                      name="file_upload"
-                      id="file_upload"
-                      style="display: none"
-                    />
-                    <h6 class="d-flex align-self-center ml-2">Upload Avatar</h6>
-                  </div>
-                  <div class="form-group position-relative mb-4 pl-3 pr-3">
-                    <label for="firstName">First Name</label>
-                    <input
-                      class="form_input_fields"
-                      type="text"
-                      name="firstName"
-                    />
-                  </div>
-                  <div class="form-group position-relative mb-4 pl-3 pr-3">
-                    <label for="lastName">Last Name</label>
-                    <input
-                      class="form_input_fields"
-                      type="text"
-                      name="lastName"
-                    />
-                  </div>
-                  <div class="form-group position-relative mb-4 pl-3 pr-3">
-                    <input
-                      class="form_input_fields tel-field"
-                      type="tel"
-                      name="telephone"
-                    />
-                    <div
-                      class="position-absolute d-flex input-decor3 align-items-center"
-                    >
-                      <div
-                        data-input-name="country2"
-                        data-selected-country="US"
-                        class="select-country"
-                        data-scrollable="true"
-                        data-scrollable-height="250px"
-                      ></div>
-                      <div class="pl-1">
-                        <img
-                          src="./assets/images/black-line-vert.svg"
-                          class="img-fluid"
-                          alt="vert-line"
-                        />
-                      </div>
+                      <img
+                        src="./assets/images/members-avatar2.svg"
+                        alt="membericon"
+                        style="margin-left: -20px"
+                      />
+                      <img
+                        src="./assets/images/members-avatar3.svg"
+                        alt="membericon"
+                        style="margin-left: -20px"
+                      />
+                      <img
+                        src="./assets/images/members-avatar4.svg"
+                        alt="membericon"
+                        style="margin-left: -20px"
+                      />
                     </div>
+                    <span class="font-xs f-weight-700">20+</span>
                   </div>
-                  <div class="form-group position-relative mb-4 pl-3 pr-3">
-                    <label for="gender">Gender</label>
-                    <select
-                      class="form_input_fields bg-transparent"
-                      type="select"
-                      name="gender"
-                    >
-                      <option>Male</option>
-                      <option>Female</option>
-                    </select>
-                    <i
-                      class="fa fa-angle-down position-absolute form-select-dropdown"
-                    ></i>
-                  </div>
-                  <div class="form-group position-relative mb-4 pl-3 pr-3">
-                    <label for="age">Age</label>
-                    <select
-                      class="form_input_fields bg-transparent"
-                      type="select"
-                      name="age"
-                    >
-                      <option>27 Years Old</option>
-                      <option>26 Years Old</option>
-                    </select>
-                    <i
-                      class="fa fa-angle-down position-absolute form-select-dropdown"
-                    ></i>
-                  </div>
-                  <div class="form-group mt-4 px-3">
-                    <label for="submit"></label>
-                    <input
-                      type="submit"
-                      class="btn btn-continue"
-                      value="Continue"
-                    />
-                  </div>
-                </form>
+                </div>
+              </div>
+              <div class="mt-1">
+                <label for="submit"></label>
+                <input type="submit" class="btn btn-continue" value="Publish" />
               </div>
             </div>
           </div>
@@ -958,67 +911,5 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
     <script src="./assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/flagstrap/1.0/js/jquery.flagstrap.min.js"
-      integrity="sha512-jPZiVBpHbOc0vbOJ7AMjoN8/9ynXNjLn4j2PeOWFrfDYdq896sv4CaFzTOrHwLa1fsI9m74QUf3XdG5V4JKjZw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-
-    <script>
-      $(document).ready(() => {
-        $("#menu-show").click(() => {
-          $(".side-nav").show();
-          $("#menu-close").show();
-          return false;
-        });
-
-        $("#menu-close").click(() => {
-          $(".side-nav").hide();
-          // return false;
-        });
-
-        $("#check").on("change", function () {
-          if (this.checked) {
-            $("#AddUser").hide();
-            $("#users-filter").hide();
-            $("#users-actions").css("display", "flex");
-          } else {
-            $("#AddUser").show();
-            $("#users-filter").css("display", "flex");
-            $("#users-actions").hide();
-          }
-        });
-      });
-
-      $("#demo").flagStrap();
-
-      $(".select-country").flagStrap({
-        countries: {
-          NG: "NGN",
-          AU: "AUD",
-          CA: "CAD",
-          SG: "SGD",
-          GB: "GBP",
-        },
-        buttonSize: "btn-sm",
-        buttonType: "btn-info",
-        labelMargin: "10px",
-        scrollable: false,
-        scrollableHeight: "350px",
-      });
-
-      $("#advanced").flagStrap({
-        buttonSize: "btn-lg",
-        buttonType: "btn-primary",
-        labelMargin: "20px",
-        scrollable: false,
-        scrollableHeight: "350px",
-      });
-
-      $("#upload-img").click(() => {
-        $("#file_upload").click();
-      });
-    </script>
   </body>
 </html>
