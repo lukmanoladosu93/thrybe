@@ -3,7 +3,7 @@
 	<head>
 		<!-- Basic Page Needs
     ================================================== -->
-		<title>Thrybe Room - Add a New Room</title>
+		<title>Wallet</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta
@@ -36,45 +36,6 @@
 			type="text/css"
 			href="./assets/stylesheets/style.css"
 		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/flagstrap/1.0/css/flags.min.css"
-			integrity="sha512-wLjzMv9GhdAgKsaca/ZRs5sEOVsexDeA0PllsVIgTh+St4sMmrXz4udlz/rMHAN58IMZAXVtzxI112u8QoRHfA=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
-
-		<style>
-			.btn-info,
-			.btn-info:focus,
-			.btn-info:hover,
-			.btn-info:active {
-				background-color: transparent;
-				color: #000;
-				border: none;
-				box-shadow: none;
-				height: 60px;
-				border-radius: 100px 0 0 100px;
-			}
-			.btn-info.dropdown-toggle,
-			.btn-info.dropdown-toggle:active,
-			.btn-info.dropdown-toggle:hover,
-			.btn-info.dropdown-toggle:focus {
-				background-color: transparent;
-				color: #000;
-				border: none;
-				box-shadow: none;
-			}
-			.show > .btn-info.dropdown-toggle,
-			.show > .btn-info.dropdown-toggle:active,
-			.show > .btn-info.dropdown-toggle:hover,
-			.show > .btn-info.dropdown-toggle:focus {
-				background-color: transparent;
-				color: #000;
-				border: none;
-				box-shadow: none;
-			}
-		</style>
 	</head>
 	<body>
 		<aside class="side-nav">
@@ -102,7 +63,6 @@
 									viewBox="0 0 26 26"
 									fill="none"
 									xmlns="http://www.w3.org/2000/svg"
-									class="dBoard"
 								>
 									<path
 										d="M3.625 3.83203H11.4375C11.5583 3.83203 11.62 3.8701 11.6504 3.90043C11.6807 3.93076 11.7188 3.99253 11.7188 4.11328V11.9258C11.7188 12.0465 11.6807 12.1083 11.6504 12.1386C11.62 12.169 11.5583 12.207 11.4375 12.207H3.625C3.50425 12.207 3.44248 12.169 3.41215 12.1386C3.38182 12.1083 3.34375 12.0465 3.34375 11.9258V4.11328C3.34375 3.99253 3.38182 3.93076 3.41215 3.90043C3.44248 3.8701 3.50425 3.83203 3.625 3.83203Z"
@@ -130,7 +90,7 @@
 					>Management <i class="fa fa-angle-down"></i
 				></a>
 				<ul class="nav-menu mt-3">
-					<li class="nav-item active">
+					<li class="nav-item">
 						<a href="#" class="nav-link">
 							<i class=""
 								><svg
@@ -319,7 +279,7 @@
 					>Administration <i class="fa fa-angle-down"></i
 				></a>
 				<ul class="nav-menu mt-3">
-					<li class="nav-item">
+					<li class="nav-item active">
 						<a href="#" class="nav-link">
 							<i class=""
 								><svg
@@ -773,845 +733,605 @@
 									<div class="position-absolute dropdown-pointer">
 										<i class="fa fa-caret-up"></i>
 									</div>
-									<a class="dropdown-item" href="#">Action</a>
-									<a class="dropdown-item" href="#">Another action</a>
-									<a class="dropdown-item" href="#">Something else here</a>
+									<a class="dropdown-item" href="#">View Profile</a>
+									<a class="dropdown-item" href="#">Settings</a>
+									<a class="dropdown-item" href="#">Logout</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</header>
+			<!-- Main Content-->
 			<div class="main-content">
 				<div class="container-fluid">
-					<div class="row mb-3">
-						<div class="col-12 mt-5">
-							<div class="d-flex align-item-center">
-								<ul class="d-flex">
-									<li class="mr-2">
-										<i class="fa fa-home"></i
-										><span class="font-xs pl-2 f-weight-500 mt-1">Home</span>
-									</li>
-									<li class="mr-2">
-										<i class="fa fa-chevron-right font-xs"></i>
-										<span class="font-xs pl-2 f-weight-500 mt-1"
-											>Thrybe Room</span
-										>
-									</li>
-									<li class="mr-2">
-										<i class="fa fa-chevron-right font-xs"></i>
-										<span class="font-xs pl-2 f-weight-500 mt-1"
-											><strong>Create New</strong></span
-										>
-									</li>
-								</ul>
-							</div>
-							<div class="mt-4 d-flex align-items-center">
-								<h5>Create a New Thrybe Room</h5>
+					<div class="row">
+						<div class="col-12 mt-5 mb-3">
+							<ul class="myBreadcrumb p-0">
+								<li>
+									<a href="#" class="d-flex align-items-center"
+										><i class="fa fa-home text-darkGrey"></i
+										><span class="font-xs pl-2 f-weight-500 mt-1 text-dark"
+											>Home</span
+										></a
+									>
+								</li>
+								<li class="">
+									<a href="#" class="d-flex align-items-center"
+										><span class="font-xs f-weight-500 mt-1 text-dark"
+											>Wallet management</span
+										></a
+									>
+								</li>
+                                <li class="active">
+									<a href="#" class="d-flex align-items-center"
+										><span class="font-xs f-weight-500 mt-1 text-dark"
+											>Gift Purchases</span
+										></a
+									>
+								</li>
+							</ul>
+							<div
+								class="mt-4 d-flex justify-content-between align-items-center"
+							>
+								<h5>Gift Purchases</h5>
 							</div>
 						</div>
 					</div>
-					<div class="row mb-5">
-						<div
-							class="col-xl-5 col-md-8 d-flex justify-content-between align-item-center mt-3 basic-info"
-						>
-							<div class="d-flex align-item-center ml-2 basic-info-inner">
-								<div
-									class="circle purple d-flex justify-content-center align-item-center"
-								>
-									<span class="text-white">1</span>
+					<div class="row">
+						<div class="col-xl-5 col-md-6 mb-3 d-flex flex-column flex-grow-1">
+							<div class="wallet-balance-card mt-2 h-100">
+								<div class="row">
+									<div class="col-6">
+										<div class="d-flex flex-column">
+											<div class="d-flex align-items-center">
+												<i class="fa fa-circle text-grey"></i>&nbsp;&nbsp;<span
+													class="text-light font-sm"
+													>ALL USERS</span
+												>
+											</div>
+											<h4 class="text-light mt-2">752K</h4>
+											<p class="text-danger font-sm f-weight-500">-2.5%</p>
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="d-flex flex-column align-items-end">
+											<div class="d-flex align-items-center">
+												<span class="text-light font-sm">WALLET BALANCE</span
+												>&nbsp;&nbsp;<i class="fa fa-circle text-dark"></i>
+											</div>
+											<h4 class="text-light mt-2">₦252K</h4>
+											<p class="text-success font-sm f-weight-500">+2.5%</p>
+										</div>
+									</div>
 								</div>
-								<h6 class="mt-2 ml-2">Seeker's Details</h6>
+								<div class="d-flex justify-content-between align-items-center">
+									<h6 class="text-light font-sm2">My Card</h6>
+									<a href="#"
+										><svg
+											width="17"
+											height="17"
+											viewBox="0 0 17 17"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M15.1253 4.29486L4.72984 14.6904L1.51571 15.076L1.90141 11.8619L12.2969 1.46643C12.3061 1.46378 12.3158 1.4611 12.3258 1.45839C12.4626 1.42133 12.6605 1.38264 12.8925 1.37944C13.3367 1.37331 13.9278 1.49293 14.5133 2.07843C15.0988 2.66392 15.2184 3.25504 15.2123 3.69925C15.2091 3.93131 15.1704 4.1292 15.1334 4.266C15.1307 4.27601 15.128 4.28563 15.1253 4.29486Z"
+												stroke="white"
+												stroke-width="2"
+											/>
+										</svg>
+									</a>
+								</div>
 							</div>
-							<div class="d-flex mr-2">
+						</div>
+						<div class="col-xl-2 col-md-6 mb-3 d-flex flex-column flex-grow-1">
+							<div class="custom-card h-100">
 								<div
-									class="circle white d-flex justify-content-center align-item-center m-2"
+									class="d-flex align-items-center justify-content-between mt-3"
 								>
-									<span>2</span>
+									<div class="">
+										<h6 class="font-sm2 f-weight-500">ALL TRANSACTIONS</h6>
+										<h6 class="f-weight-600 mb-0 font-sm2">13,495</h6>
+									</div>
+									<a href="#"><i class="fa fa-angle-right text-dark"></i></a>
 								</div>
+								<div class="trend-div mt-4">
+									<img
+										src="./assets/images/AllUsersChartImg.png"
+										class="img-fluid"
+										alt=""
+									/>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-2 col-md-6 mb-3 d-flex flex-column flex-grow-1">
+							<div class="custom-card h-100">
 								<div
-									class="circle white d-flex justify-content-center align-item-center m-2"
+									class="d-flex align-items-center justify-content-between mt-3"
 								>
-									<span>3</span>
+									<div class="">
+										<h6 class="font-sm2 f-weight-500">ALL INFLOWS</h6>
+										<h6 class="f-weight-600 mb-0 font-sm2 text-success">
+											+13,495
+										</h6>
+									</div>
+									<a href="#"><i class="fa fa-angle-right text-dark"></i></a>
+								</div>
+								<div class="trend-div mt-4">
+									<img
+										src="./assets/images/allTalkChartImg.png"
+										class="img-fluid"
+										alt=""
+									/>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-2 col-md-6 mb-3 d-flex flex-column flex-grow-1">
+							<div class="custom-card h-100">
+								<div
+									class="d-flex align-items-center justify-content-between mt-3"
+								>
+									<div class="">
+										<h6 class="font-sm2 f-weight-500">ALL OUTFLOWS</h6>
+										<h6 class="f-weight-600 mb-0 font-sm2 text-danger">
+											-13,495
+										</h6>
+									</div>
+									<a href="#"><i class="fa fa-angle-right text-dark"></i></a>
+								</div>
+								<div class="trend-div mt-4">
+									<img
+										src="./assets/images/allRoomsChartImg.png"
+										class="img-fluid"
+										alt=""
+									/>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div
-							class="custom-card col-xl-5 col-md-8 ml-3"
-							style="overflow-x: auto"
-						>
-							<div style="min-width: 1200px">
-								<div class="row justify-content-between align-items-center">
-									<div class="col-lg-5 mt-3 mb-3">
-										<div class="d-flex align-items-center">
-											<div class="search-user position-relative">
-												<input
-													type="text"
-													class="search-user-field"
-													placeholder="Search"
-												/>
-												<button
-													class="btn position-absolute"
-													style="right: 2px; top: 0"
-												>
-													<img
-														src="./assets/images/searchIcon.svg"
-														style="height: 24px; width: 24px"
+						<div class="col-11 mb-3">
+							<div class="custom-card">
+								<div class="row mt-3">
+									<div
+										class="col-xl-7 col-12 d-flex flex-column flex-grow-1 mb-4"
+									>
+										<div class="h-100">
+											<div class="d-flex justify-content-between">
+												<h5>PAYMENTS & TRANSACTIONS</h5>
+												<a href="#"
+													><img
+														src="./assets/images/right-pointer.svg"
+														class="img-fluid"
 														alt=""
-													/>
-												</button>
+												/></a>
+											</div>
+											<div class="mt-3 d-flex align-items-center">
+												<div class="bgColored-header">All transactions</div>
+												<div class="hits ml-3">
+													<div></div>
+													<h6 class="mb-0">Profile Boost</h6>
+												</div>
+												<div class="visitors ml-3">
+													<div></div>
+													<h6 class="mb-0">Thrybe Seek</h6>
+												</div>
+												<div class="subscription ml-3">
+													<div></div>
+													<h6 class="mb-0">Subscription</h6>
+												</div>
+											</div>
+											<div class="chart-area mt-3">
+												<canvas id="myChart" height="50%" width="100%"></canvas>
+											</div>
+											<div class="period-filter mt-4">
+												<ul class="nav nav-pills period-filter-links">
+													<li class="nav-item">
+														<a class="nav-link active" href="#">Day</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" href="#">Week</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" href="#">Month</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" href="#">Year</a>
+													</li>
+												</ul>
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-5 mt-3 mb-3">
-										<div
-											class="align-items-center justify-content-end"
-											id="users-filter"
-										>
-											<div class="dropdown messages-dropdown ml-4">
-												<button
-													class="btn dropdown-button position-relative"
-													type="button"
-													data-toggle="dropdown"
-													aria-haspopup="true"
-													aria-expanded="false"
-													style="width: auto"
-												>
-													<span class="font-sm">Sort By</span>&nbsp;&nbsp;
-													<img
-														src="./assets/images/filter-icon.svg"
-														alt="notification"
-													/>
-												</button>
-												<div
-													class="dropdown-menu mt-3"
-													aria-labelledby="dropdownMenuButton"
-												>
-													<div class="position-relative drop-down-menu-inner">
-														<div class="position-absolute dropdown-pointer">
-															<i class="fa fa-caret-up"></i>
+
+									<div
+										class="col-xl-5 col-12 d-flex flex-column flex-grow-1 mb-4"
+									>
+										<div class="h-100">
+											<div class="d-flex justify-content-between">
+												<h5>GIFTS PURCHASE</h5>
+												<a href="#"
+													><img
+														src="./assets/images/right-pointer.svg"
+														class="img-fluid"
+														alt=""
+												/></a>
+											</div>
+											<div
+												class="chart-area mt-4 d-flex flex-column justify-content-center"
+											>
+												<div class="row align-items-center mt-4">
+													<div class="col-lg-7">
+														<div class="p-3 position-relative">
+															<canvas
+																id="myPieChart"
+																style="width: 100%; height: 100%"
+															></canvas>
 														</div>
-														<a class="dropdown-item" href="#">Action</a>
-														<a class="dropdown-item" href="#">Another action</a>
-														<a class="dropdown-item" href="#"
-															>Something else here</a
-														>
+													</div>
+													<div class="col-lg-5">
+														<div>
+															<p class="f-weight-600 font-sm mb-0">
+																ALL TOKEN TRANSACTIONS
+															</p>
+															<h3 class="f-weight-600">300K</h3>
+
+															<hr />
+														</div>
+														<div class="d-flex flex-column">
+															<div class="visitors align-items-center mb-2">
+																<div style="height: 25px; width: 25px"></div>
+																&nbsp;&nbsp;
+																<h6 class="mb-0">Purchases</h6>
+															</div>
+															<div class="hits align-items-center mb-2">
+																<div style="height: 25px; width: 25px"></div>
+																&nbsp;&nbsp;
+																<h6 class="mb-0">Exchanges</h6>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="row mt-3">
+													<div class="col-12 mb-2">
+														<ul class="nav nav-tabs pie-days mt-4 mb-4">
+															<li class="nav-item">
+																<a class="nav-link" href="#">Mon</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" href="#">Tue</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link active" href="#">Wed</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link">Thu</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link">Fri</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link">Sat</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link">Sun</a>
+															</li>
+														</ul>
 													</div>
 												</div>
 											</div>
+											<div class="period-filter mt-4">
+												<ul class="nav nav-pills period-filter-links">
+													<li class="nav-item">
+														<a class="nav-link active" href="#">Week</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" href="#">Month</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" href="#">Year</a>
+													</li>
+												</ul>
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="users-table-div table-responsive">
-									<table class="table table-borderless users-table">
-										<thead>
-											<tr>
-												<th colspan="2">User name and Avatar</th>
-												<th>Email Address</th>
-												<th>Location</th>
-												<th>Status</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr style="background-color: rgba(255, 255, 255, 0.65)">
-												<td colspan="2">
-													<div class="d-flex justify-content-start">
-														<img
-															class="img-fluid"
-															src="./assets/images/members-avatar1.svg"
-															alt="members-avatar"
-														/>
-														<div class="d-flex flex-column align-items-start">
-															<h6 class="font-sm f-weight-700 mt-2 ml-5 pl-1">
-																Farouk Asmaya
-															</h6>
-															<div class="ml-5">
-																<span class="font-sm w-75 ml-1 mb-4"
-																	>Fashion Designer,</span
-																>
-																<span class="font-sm w-75 ml-1 mb-4">23</span>
-																<img
-																	src="./assets/images/verified-icon.svg"
-																	alt="verified-icon"
-																/>
-															</div>
-														</div>
-													</div>
-												</td>
-
-												<td>
-													<div class="d-flex align-items-center">
-														<p class="f-weight-700">retsilo@gmail.com</p>
-													</div>
-												</td>
-												<td>
-													<div class="d-flex align-items-center">
-														<img
-															src="./assets/images/Location.svg"
-															alt="Location"
-														/>
-														<span class="p-2">Barcelona</span>
-														<img
-															src="./assets/images/usa-flag-icon.svg"
-															alt=""
-														/>
-													</div>
-												</td>
-												<td>
-													<div class="diamond-status">
-														<span class="font-xs">Diamond</span>
-													</div>
-												</td>
-												<td>
-													<div class="dropdown position-relative ml-4">
-														<button
-															class="btn"
-															type="button"
-															data-toggle="dropdown"
-															aria-haspopup="true"
-															aria-expanded="true"
-														>
-															<svg
-																width="12"
-																height="12"
-																viewBox="0 0 12 12"
-																fill="none"
-																xmlns="http://www.w3.org/2000/svg"
-															>
-																<g clip-path="url(#clip0_1251_27914)">
-																	<path
-																		d="M7.06065 0.439338C7.64643 1.02512 7.64643 1.97487 7.06065 2.56066C6.47487 3.14644 5.52512 3.14644 4.93934 2.56066C4.35355 1.97487 4.35355 1.02512 4.93934 0.439338C5.5251 -0.146446 6.47484 -0.146446 7.06065 0.439338Z"
-																		fill="black"
-																	></path>
-																	<path
-																		d="M7.06065 4.93934C7.64643 5.52512 7.64643 6.47487 7.06065 7.06065C6.47487 7.64643 5.52512 7.64643 4.93934 7.06065C4.35355 6.47487 4.35355 5.52512 4.93934 4.93934C5.5251 4.35355 6.47484 4.35355 7.06065 4.93934Z"
-																		fill="black"
-																	></path>
-																	<path
-																		d="M7.06065 9.43934C7.64643 10.0251 7.64643 10.9749 7.06065 11.5607C6.47487 12.1464 5.52512 12.1464 4.93934 11.5607C4.35355 10.9749 4.35355 10.0251 4.93934 9.43934C5.5251 8.85355 6.47484 8.85355 7.06065 9.43934Z"
-																		fill="black"
-																	></path>
-																</g>
-																<defs>
-																	<clipPath id="clip0_1251_27914">
-																		<rect
-																			width="12"
-																			height="12"
-																			fill="white"
-																		></rect>
-																	</clipPath>
-																</defs>
-															</svg>
-														</button>
-														<div
-															class="dropdown-menu mt-3 my---dropdown"
-															aria-labelledby="dropdownMenuButton"
-															x-placement="top-start"
-															style="
-																position: absolute;
-																will-change: transform;
-																top: 0px;
-																left: 0px;
-																transform: translate3d(-95px, -134px, 0px);
-															"
-														>
-															<div class="drop-down-menu-inner">
-																<a class="dropdown-item" href="#">Action</a>
-																<a class="dropdown-item" href="#"
-																	>Another action</a
-																>
-																<a class="dropdown-item" href="#"
-																	>Something else here</a
-																>
-															</div>
-														</div>
-													</div>
-												</td>
-											</tr>
-											<tr style="background-color: rgba(255, 255, 255, 0.65)">
-												<td colspan="2">
-													<div class="d-flex justify-content-start">
-														<img
-															class="img-fluid"
-															src="./assets/images/members-avatar2.svg"
-															alt="members-avatar"
-														/>
-														<div class="d-flex flex-column align-items-start">
-															<h6 class="font-sm f-weight-700 mt-2 ml-5 pl-1">
-																Lira Jediah
-															</h6>
-															<div class="ml-5">
-																<span class="font-sm w-75 ml-1 mb-4"
-																	>Professor,</span
-																>
-																<span class="font-sm w-75 ml-1 mb-4">40</span>
-																<img
-																	src="./assets/images/verified-icon.svg"
-																	alt="verified-icon"
-																/>
-															</div>
-														</div>
-													</div>
-												</td>
-
-												<td>
-													<div class="d-flex align-items-center">
-														<p class="f-weight-700">lira.jediah@gmail.com</p>
-													</div>
-												</td>
-												<td>
-													<div class="d-flex align-items-center">
-														<img
-															src="./assets/images/Location.svg"
-															alt="Location"
-														/>
-														<span class="p-2">Madrid</span>
-														<img
-															src="./assets/images/benin-flag-icon.svg"
-															alt=""
-														/>
-													</div>
-												</td>
-												<td>
-													<div class="diamond-status">
-														<span class="font-xs">Diamond</span>
-													</div>
-												</td>
-												<td>
-													<div class="dropdown position-relative ml-4">
-														<button
-															class="btn"
-															type="button"
-															data-toggle="dropdown"
-															aria-haspopup="true"
-															aria-expanded="true"
-														>
-															<svg
-																width="12"
-																height="12"
-																viewBox="0 0 12 12"
-																fill="none"
-																xmlns="http://www.w3.org/2000/svg"
-															>
-																<g clip-path="url(#clip0_1251_27914)">
-																	<path
-																		d="M7.06065 0.439338C7.64643 1.02512 7.64643 1.97487 7.06065 2.56066C6.47487 3.14644 5.52512 3.14644 4.93934 2.56066C4.35355 1.97487 4.35355 1.02512 4.93934 0.439338C5.5251 -0.146446 6.47484 -0.146446 7.06065 0.439338Z"
-																		fill="black"
-																	></path>
-																	<path
-																		d="M7.06065 4.93934C7.64643 5.52512 7.64643 6.47487 7.06065 7.06065C6.47487 7.64643 5.52512 7.64643 4.93934 7.06065C4.35355 6.47487 4.35355 5.52512 4.93934 4.93934C5.5251 4.35355 6.47484 4.35355 7.06065 4.93934Z"
-																		fill="black"
-																	></path>
-																	<path
-																		d="M7.06065 9.43934C7.64643 10.0251 7.64643 10.9749 7.06065 11.5607C6.47487 12.1464 5.52512 12.1464 4.93934 11.5607C4.35355 10.9749 4.35355 10.0251 4.93934 9.43934C5.5251 8.85355 6.47484 8.85355 7.06065 9.43934Z"
-																		fill="black"
-																	></path>
-																</g>
-																<defs>
-																	<clipPath id="clip0_1251_27914">
-																		<rect
-																			width="12"
-																			height="12"
-																			fill="white"
-																		></rect>
-																	</clipPath>
-																</defs>
-															</svg>
-														</button>
-														<div
-															class="dropdown-menu mt-3 my---dropdown"
-															aria-labelledby="dropdownMenuButton"
-															x-placement="top-start"
-															style="
-																position: absolute;
-																will-change: transform;
-																top: 0px;
-																left: 0px;
-																transform: translate3d(-95px, -134px, 0px);
-															"
-														>
-															<div class="drop-down-menu-inner">
-																<a class="dropdown-item" href="#">Action</a>
-																<a class="dropdown-item" href="#"
-																	>Another action</a
-																>
-																<a class="dropdown-item" href="#"
-																	>Something else here</a
-																>
-															</div>
-														</div>
-													</div>
-												</td>
-											</tr>
-											<tr style="background-color: rgba(255, 255, 255, 0.65)">
-												<td colspan="2">
-													<div class="d-flex justify-content-start">
-														<img
-															class="img-fluid"
-															src="./assets/images/members-avatar3.svg"
-															alt="members-avatar"
-														/>
-														<div class="d-flex flex-column align-items-start">
-															<h6 class="font-sm f-weight-700 mt-2 ml-5 pl-1">
-																Jennifer Amoku
-															</h6>
-															<div class="ml-5">
-																<span class="font-sm w-75 ml-1 mb-4"
-																	>Educator,</span
-																>
-																<span class="font-sm w-75 ml-1 mb-4">32</span>
-																<img
-																	src="./assets/images/verified-icon.svg"
-																	alt="verified-icon"
-																/>
-															</div>
-														</div>
-													</div>
-												</td>
-
-												<td>
-													<div class="d-flex align-items-center">
-														<p class="f-weight-700">jenniferamoku@gmail.com</p>
-													</div>
-												</td>
-
-												<td>
-													<div class="d-flex align-items-center">
-														<img
-															src="./assets/images/Location.svg"
-															alt="Location"
-														/>
-														<span class="p-2">Lagos</span>
-														<img
-															src="./assets/images/ivory-coast-flag-icon.svg"
-															alt=""
-														/>
-													</div>
-												</td>
-												<td>
-													<div class="diamond-status">
-														<span class="font-xs">Diamond</span>
-													</div>
-												</td>
-												<td>
-													<div class="dropdown position-relative ml-4">
-														<button
-															class="btn"
-															type="button"
-															data-toggle="dropdown"
-															aria-haspopup="true"
-															aria-expanded="true"
-														>
-															<svg
-																width="12"
-																height="12"
-																viewBox="0 0 12 12"
-																fill="none"
-																xmlns="http://www.w3.org/2000/svg"
-															>
-																<g clip-path="url(#clip0_1251_27914)">
-																	<path
-																		d="M7.06065 0.439338C7.64643 1.02512 7.64643 1.97487 7.06065 2.56066C6.47487 3.14644 5.52512 3.14644 4.93934 2.56066C4.35355 1.97487 4.35355 1.02512 4.93934 0.439338C5.5251 -0.146446 6.47484 -0.146446 7.06065 0.439338Z"
-																		fill="black"
-																	></path>
-																	<path
-																		d="M7.06065 4.93934C7.64643 5.52512 7.64643 6.47487 7.06065 7.06065C6.47487 7.64643 5.52512 7.64643 4.93934 7.06065C4.35355 6.47487 4.35355 5.52512 4.93934 4.93934C5.5251 4.35355 6.47484 4.35355 7.06065 4.93934Z"
-																		fill="black"
-																	></path>
-																	<path
-																		d="M7.06065 9.43934C7.64643 10.0251 7.64643 10.9749 7.06065 11.5607C6.47487 12.1464 5.52512 12.1464 4.93934 11.5607C4.35355 10.9749 4.35355 10.0251 4.93934 9.43934C5.5251 8.85355 6.47484 8.85355 7.06065 9.43934Z"
-																		fill="black"
-																	></path>
-																</g>
-																<defs>
-																	<clipPath id="clip0_1251_27914">
-																		<rect
-																			width="12"
-																			height="12"
-																			fill="white"
-																		></rect>
-																	</clipPath>
-																</defs>
-															</svg>
-														</button>
-														<div
-															class="dropdown-menu mt-3 my---dropdown"
-															aria-labelledby="dropdownMenuButton"
-															x-placement="top-start"
-															style="
-																position: absolute;
-																will-change: transform;
-																top: 0px;
-																left: 0px;
-																transform: translate3d(-95px, -134px, 0px);
-															"
-														>
-															<div class="drop-down-menu-inner">
-																<a class="dropdown-item" href="#">Action</a>
-																<a class="dropdown-item" href="#"
-																	>Another action</a
-																>
-																<a class="dropdown-item" href="#"
-																	>Something else here</a
-																>
-															</div>
-														</div>
-													</div>
-												</td>
-											</tr>
-											<tr style="background-color: rgba(255, 255, 255, 0.65)">
-												<td colspan="2">
-													<div class="d-flex justify-content-start">
-														<img
-															class="img-fluid"
-															src="./assets/images/members-avatar4.svg"
-															alt="members-avatar"
-														/>
-														<div class="d-flex flex-column align-items-start">
-															<h6 class="font-sm f-weight-700 mt-2 ml-5 pl-1">
-																Cecil Jenny
-															</h6>
-															<div class="ml-5">
-																<span class="font-sm w-75 ml-1 mb-4"
-																	>Fashion Model,</span
-																>
-																<span class="font-sm w-75 ml-1 mb-4">18</span>
-																<img
-																	src="./assets/images/verified-icon.svg"
-																	alt="verified-icon"
-																/>
-															</div>
-														</div>
-													</div>
-												</td>
-
-												<td>
-													<div class="d-flex align-items-center">
-														<p class="f-weight-700">cecil19288@yahoo.com</p>
-													</div>
-												</td>
-												<td>
-													<div class="d-flex align-items-center">
-														<img
-															src="./assets/images/Location.svg"
-															alt="Location"
-														/>
-														<span class="p-2">Bong City</span>
-														<img
-															src="./assets/images/benin-flag-icon.svg"
-															alt=""
-														/>
-													</div>
-												</td>
-												<td>
-													<div class="verified-status">
-														<span class="font-xs">Verified</span>
-													</div>
-												</td>
-												<td>
-													<div class="dropdown position-relative ml-4">
-														<button
-															class="btn"
-															type="button"
-															data-toggle="dropdown"
-															aria-haspopup="true"
-															aria-expanded="true"
-														>
-															<svg
-																width="12"
-																height="12"
-																viewBox="0 0 12 12"
-																fill="none"
-																xmlns="http://www.w3.org/2000/svg"
-															>
-																<g clip-path="url(#clip0_1251_27914)">
-																	<path
-																		d="M7.06065 0.439338C7.64643 1.02512 7.64643 1.97487 7.06065 2.56066C6.47487 3.14644 5.52512 3.14644 4.93934 2.56066C4.35355 1.97487 4.35355 1.02512 4.93934 0.439338C5.5251 -0.146446 6.47484 -0.146446 7.06065 0.439338Z"
-																		fill="black"
-																	></path>
-																	<path
-																		d="M7.06065 4.93934C7.64643 5.52512 7.64643 6.47487 7.06065 7.06065C6.47487 7.64643 5.52512 7.64643 4.93934 7.06065C4.35355 6.47487 4.35355 5.52512 4.93934 4.93934C5.5251 4.35355 6.47484 4.35355 7.06065 4.93934Z"
-																		fill="black"
-																	></path>
-																	<path
-																		d="M7.06065 9.43934C7.64643 10.0251 7.64643 10.9749 7.06065 11.5607C6.47487 12.1464 5.52512 12.1464 4.93934 11.5607C4.35355 10.9749 4.35355 10.0251 4.93934 9.43934C5.5251 8.85355 6.47484 8.85355 7.06065 9.43934Z"
-																		fill="black"
-																	></path>
-																</g>
-																<defs>
-																	<clipPath id="clip0_1251_27914">
-																		<rect
-																			width="12"
-																			height="12"
-																			fill="white"
-																		></rect>
-																	</clipPath>
-																</defs>
-															</svg>
-														</button>
-														<div
-															class="dropdown-menu mt-3 my---dropdown"
-															aria-labelledby="dropdownMenuButton"
-															x-placement="top-start"
-															style="
-																position: absolute;
-																will-change: transform;
-																top: 0px;
-																left: 0px;
-																transform: translate3d(-95px, -134px, 0px);
-															"
-														>
-															<div class="drop-down-menu-inner">
-																<a class="dropdown-item" href="#">Action</a>
-																<a class="dropdown-item" href="#"
-																	>Another action</a
-																>
-																<a class="dropdown-item" href="#"
-																	>Something else here</a
-																>
-															</div>
-														</div>
-													</div>
-												</td>
-											</tr>
-											<tr style="background-color: rgba(255, 255, 255, 0.65)">
-												<td colspan="2">
-													<div class="d-flex justify-content-start">
-														<img
-															class="img-fluid"
-															src="./assets/images/members-avatar2.svg"
-															alt="members-avatar"
-														/>
-														<div class="d-flex flex-column align-items-start">
-															<h6 class="font-sm f-weight-700 mt-2 ml-5 pl-1">
-																Nusaiba Sabiu
-															</h6>
-															<div class="ml-5">
-																<span class="font-sm w-75 ml-1 mb-4"
-																	>Blogger,</span
-																>
-																<span class="font-sm w-75 ml-1 mb-4">19</span>
-																<img
-																	src="./assets/images/verified-icon.svg"
-																	alt="verified-icon"
-																/>
-															</div>
-														</div>
-													</div>
-												</td>
-
-												<td>
-													<div class="d-flex align-items-center">
-														<p class="f-weight-700">nusaiba.sabiu@gmail.com</p>
-													</div>
-												</td>
-												<td>
-													<div class="d-flex align-items-center">
-														<img
-															src="./assets/images/Location.svg"
-															alt="Location"
-														/>
-														<span class="p-2">Cape Town</span>
-														<img
-															src="./assets/images/usa-flag-icon.svg"
-															alt=""
-														/>
-													</div>
-												</td>
-												<td>
-													<div class="diamond-status">
-														<span class="font-xs">Diamond</span>
-													</div>
-												</td>
-												<td>
-													<div class="dropdown position-relative ml-4">
-														<button
-															class="btn"
-															type="button"
-															data-toggle="dropdown"
-															aria-haspopup="true"
-															aria-expanded="true"
-														>
-															<svg
-																width="12"
-																height="12"
-																viewBox="0 0 12 12"
-																fill="none"
-																xmlns="http://www.w3.org/2000/svg"
-															>
-																<g clip-path="url(#clip0_1251_27914)">
-																	<path
-																		d="M7.06065 0.439338C7.64643 1.02512 7.64643 1.97487 7.06065 2.56066C6.47487 3.14644 5.52512 3.14644 4.93934 2.56066C4.35355 1.97487 4.35355 1.02512 4.93934 0.439338C5.5251 -0.146446 6.47484 -0.146446 7.06065 0.439338Z"
-																		fill="black"
-																	></path>
-																	<path
-																		d="M7.06065 4.93934C7.64643 5.52512 7.64643 6.47487 7.06065 7.06065C6.47487 7.64643 5.52512 7.64643 4.93934 7.06065C4.35355 6.47487 4.35355 5.52512 4.93934 4.93934C5.5251 4.35355 6.47484 4.35355 7.06065 4.93934Z"
-																		fill="black"
-																	></path>
-																	<path
-																		d="M7.06065 9.43934C7.64643 10.0251 7.64643 10.9749 7.06065 11.5607C6.47487 12.1464 5.52512 12.1464 4.93934 11.5607C4.35355 10.9749 4.35355 10.0251 4.93934 9.43934C5.5251 8.85355 6.47484 8.85355 7.06065 9.43934Z"
-																		fill="black"
-																	></path>
-																</g>
-																<defs>
-																	<clipPath id="clip0_1251_27914">
-																		<rect
-																			width="12"
-																			height="12"
-																			fill="white"
-																		></rect>
-																	</clipPath>
-																</defs>
-															</svg>
-														</button>
-														<div
-															class="dropdown-menu mt-3 my---dropdown"
-															aria-labelledby="dropdownMenuButton"
-															x-placement="top-start"
-															style="
-																position: absolute;
-																will-change: transform;
-																top: 0px;
-																left: 0px;
-																transform: translate3d(-95px, -134px, 0px);
-															"
-														>
-															<div class="drop-down-menu-inner">
-																<a class="dropdown-item" href="#">Action</a>
-																<a class="dropdown-item" href="#"
-																	>Another action</a
-																>
-																<a class="dropdown-item" href="#"
-																	>Something else here</a
-																>
-															</div>
-														</div>
-													</div>
-												</td>
-											</tr>
-											<tr style="background-color: rgba(255, 255, 255, 0.65)">
-												<td colspan="2">
-													<div class="d-flex justify-content-start">
-														<img
-															class="img-fluid"
-															src="./assets/images/members-avatar1.svg"
-															alt="members-avatar"
-														/>
-														<div class="d-flex flex-column align-items-start">
-															<h6 class="font-sm f-weight-700 mt-2 ml-5 pl-1">
-																Melody Jacob
-															</h6>
-															<div class="ml-5">
-																<span class="font-sm w-75 ml-1 mb-4"
-																	>Youtuber,</span
-																>
-																<span class="font-sm w-75 ml-1 mb-4">30</span>
-																<img
-																	src="./assets/images/verified-icon.svg"
-																	alt="verified-icon"
-																/>
-															</div>
-														</div>
-													</div>
-												</td>
-
-												<td>
-													<div class="d-flex align-items-center">
-														<p class="f-weight-700">melodyj@yahoo.com</p>
-													</div>
-												</td>
-												<td>
-													<div class="d-flex align-items-center">
-														<img
-															src="./assets/images/Location.svg"
-															alt="Location"
-														/>
-														<span class="p-2">Barcelona</span>
-														<img
-															src="./assets/images/usa-flag-icon.svg"
-															alt=""
-														/>
-													</div>
-												</td>
-												<td>
-													<div class="verified-status">
-														<span class="font-xs">Verified</span>
-													</div>
-												</td>
-												<td>
-													<div class="dropdown position-relative ml-4">
-														<button
-															class="btn"
-															type="button"
-															data-toggle="dropdown"
-															aria-haspopup="true"
-															aria-expanded="true"
-														>
-															<svg
-																width="12"
-																height="12"
-																viewBox="0 0 12 12"
-																fill="none"
-																xmlns="http://www.w3.org/2000/svg"
-															>
-																<g clip-path="url(#clip0_1251_27914)">
-																	<path
-																		d="M7.06065 0.439338C7.64643 1.02512 7.64643 1.97487 7.06065 2.56066C6.47487 3.14644 5.52512 3.14644 4.93934 2.56066C4.35355 1.97487 4.35355 1.02512 4.93934 0.439338C5.5251 -0.146446 6.47484 -0.146446 7.06065 0.439338Z"
-																		fill="black"
-																	></path>
-																	<path
-																		d="M7.06065 4.93934C7.64643 5.52512 7.64643 6.47487 7.06065 7.06065C6.47487 7.64643 5.52512 7.64643 4.93934 7.06065C4.35355 6.47487 4.35355 5.52512 4.93934 4.93934C5.5251 4.35355 6.47484 4.35355 7.06065 4.93934Z"
-																		fill="black"
-																	></path>
-																	<path
-																		d="M7.06065 9.43934C7.64643 10.0251 7.64643 10.9749 7.06065 11.5607C6.47487 12.1464 5.52512 12.1464 4.93934 11.5607C4.35355 10.9749 4.35355 10.0251 4.93934 9.43934C5.5251 8.85355 6.47484 8.85355 7.06065 9.43934Z"
-																		fill="black"
-																	></path>
-																</g>
-																<defs>
-																	<clipPath id="clip0_1251_27914">
-																		<rect
-																			width="12"
-																			height="12"
-																			fill="white"
-																		></rect>
-																	</clipPath>
-																</defs>
-															</svg>
-														</button>
-														<div
-															class="dropdown-menu mt-3 my---dropdown"
-															aria-labelledby="dropdownMenuButton"
-															x-placement="top-start"
-															style="
-																position: absolute;
-																will-change: transform;
-																top: 0px;
-																left: 0px;
-																transform: translate3d(-95px, -134px, 0px);
-															"
-														>
-															<div class="drop-down-menu-inner">
-																<a class="dropdown-item" href="#">Action</a>
-																<a class="dropdown-item" href="#"
-																	>Another action</a
-																>
-																<a class="dropdown-item" href="#"
-																	>Something else here</a
-																>
-															</div>
-														</div>
-													</div>
-												</td>
-											</tr>
-										</tbody>
-									</table>
 								</div>
 							</div>
 						</div>
 					</div>
+                    <div class="row mt-4">
+                        <div class="col-lg-11">
+                            <div class="custom-card">
+                                <div class="row justify-content-between align-items-center">
+                                    <div class="col-lg-6 mt-3">
+                                        <div class="d-flex align-items-center">
+                                            <h5 class="mb-0">History</h5>
+                                            <div class="search-user position-relative ml-3">
+                                                <input
+                                                    type="text"
+                                                    class="search-user-field"
+                                                    placeholder="Search"
+                                                />
+                                                <button
+                                                    class="btn position-absolute"
+                                                    style="right: 2px; top: 0"
+                                                >
+                                                    <img
+                                                        src="./assets/images/searchIcon.svg"
+                                                        style="height: 24px; width: 24px"
+                                                        alt=""
+                                                    />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 mt-3">
+                                        <div
+                                            class="align-items-center justify-content-end"
+                                            id="users-filter"
+                                        >
+                                            <label for="filter" class="font-sm mb-0">Filter by:</label
+                                            >&nbsp;&nbsp;&nbsp;
+                                            <select class="filter-field2 font-sm" style="width: auto">
+                                                <option value="" selected>Status</option></select
+                                            >&nbsp;&nbsp;&nbsp;
+                                            <select class="filter-field2 font-sm" style="width: auto">
+                                                <option value="" selected>Active period</option>
+                                            </select>
+                                            <div class="dropdown messages-dropdown ml-4">
+                                                <button
+                                                    class="btn dropdown-button position-relative"
+                                                    type="button"
+                                                    data-toggle="dropdown"
+                                                    aria-haspopup="true"
+                                                    aria-expanded="false"
+                                                    style="width: auto"
+                                                >
+                                                    <span class="font-sm">Sort By</span>&nbsp;&nbsp;
+                                                    <img
+                                                        src="./assets/images/filter-icon.svg"
+                                                        alt="notification"
+                                                    />
+                                                </button>
+                                                <div
+                                                    class="dropdown-menu mt-3"
+                                                    aria-labelledby="dropdownMenuButton"
+                                                >
+                                                    <div class="position-relative drop-down-menu-inner">
+                                                        <div class="position-absolute dropdown-pointer">
+                                                            <i class="fa fa-caret-up"></i>
+                                                        </div>
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="align-items-center" id="users-actions">
+                                            <button class="btn btn-danger">
+                                                Delete selected &nbsp; &nbsp; <img src="./assets/images/delete-icon.svg" alt="delete"></i>
+                                            </button>&nbsp;&nbsp;&nbsp;
+                                            <button class="btn btn-suspend">
+                                                Suspend selected &nbsp; &nbsp; <img src="./assets/images/suspend-icon.svg" alt="delete"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="users-table-div table-responsive mt-4 mb-3">
+                                    <table class="table table-borderless users-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Transaction Type</th>
+                                                <th>Transaction Medium</th>
+                                                <th>Date</th>
+                                                <th>Status</th>
+                                                <th>Amount</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr style="background-color: white">
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="funding-div">
+                                                            <img
+                                                                src="./assets/images/fund-icon.svg"
+                                                                class="img-fluid"
+                                                                alt="withdrawal"
+                                                            />
+                                                        </div>
+                                                        <span class="f-weight-600 ml-2">Top-up</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="master-card-div">
+                                                            <img src="./assets/images/master-card-icon.svg" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="ml-2">
+                                                            <h5 class="font-sm mb-0 f-weight-600">
+                                                                My Master card
+                                                            </h5>
+                                                            <p class="font-xs mb-0">0924 ******* 5675</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <p class="mb-0 f-weight-600"><span class="mr-2">03/21/2022</span>13:45PM</p>
+                                                </td>
+                                                <td>
+                                                    <div class="successful-status">Successful</div>
+                                                </td>
+                                                <td><h5>+3000</h5></td>
+                                            </tr>
+                                            <tr style="background-color: white">
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="withdrawal-div">
+                                                            <img
+                                                                src="./assets/images/withdrawal-arrow.svg"
+                                                                class="img-fluid"
+                                                                alt="withdrawal"
+                                                            />
+                                                        </div>
+                                                        <span class="f-weight-600 ml-2">Withdrawal</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="visa-card-div bg-visa-black">
+                                                            <img src="./assets/images/visa-logo.svg" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="ml-2">
+                                                            <h5 class="font-sm mb-0 f-weight-600">
+                                                                My Black Visa
+                                                            </h5>
+                                                            <p class="font-xs mb-0">0924 ******* 5675</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <p class="mb-0 f-weight-600"><span class="mr-2">03/21/2022</span>13:45PM</p>
+                                                </td>
+                                                <td>
+                                                    <div class="pending-status">Pending</div>
+                                                </td>
+                                                <td><h5>+3000</h5></td>
+                                            </tr>
+                                            <tr style="background-color: white">
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="funding-div">
+                                                            <i class="fa fa-gift text-success"></i>
+                                                        </div>
+                                                        <span class="f-weight-600 ml-2">Gift Purchase</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="visa-card-div bg-visa-blue">
+                                                            <img src="./assets/images/visa-logo.svg" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="ml-2">
+                                                            <h5 class="font-sm mb-0 f-weight-600">
+                                                                My Blue Visa
+                                                            </h5>
+                                                            <p class="font-xs mb-0">0924 ******* 5675</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <p class="mb-0 f-weight-600"><span class="mr-2">03/21/2022</span>13:45PM</p>
+                                                </td>
+                                                <td>
+                                                    <div class="successful-status">Successful</div>
+                                                </td>
+                                                <td><h5>+3000</h5></td>
+                                            </tr>
+                                            <tr style="background-color: white">
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="withdrawal-div">
+                                                            <i class="fa fa-gift text-danger"></i>
+                                                        </div>
+                                                        <span class="f-weight-600 ml-2">Gift Sale</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="visa-card-div bg-visa-red">
+                                                            <img src="./assets/images/visa-logo.svg" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="ml-2">
+                                                            <h5 class="font-sm mb-0 f-weight-600">
+                                                                My Red Visa
+                                                            </h5>
+                                                            <p class="font-xs mb-0">0924 ******* 5675</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <p class="mb-0 f-weight-600"><span class="mr-2">03/21/2022</span>13:45PM</p>
+                                                </td>
+                                                <td>
+                                                    <div class="pending-status">Pending</div>
+                                                </td>
+                                                <td><h5>+3000</h5></td>
+                                            </tr>
+                                            <tr style="background-color: white">
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="withdrawal-div">
+                                                            <img
+                                                                src="./assets/images/exchange-icon.svg"
+                                                                class="img-fluid"
+                                                                alt="withdrawal"
+                                                            />
+                                                        </div>
+                                                        <span class="f-weight-600 ml-2">Exchange</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="master-card-div">
+                                                            <img src="./assets/images/master-card-icon.svg" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="ml-2">
+                                                            <h5 class="font-sm mb-0 f-weight-600">
+                                                                My Master card
+                                                            </h5>
+                                                            <p class="font-xs mb-0">0924 ******* 5675</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <p class="mb-0 f-weight-600"><span class="mr-2">03/21/2022</span>13:45PM</p>
+                                                </td>
+                                                <td>
+                                                    <div class="successful-status">Successful</div>
+                                                </td>
+                                                <td><h5>+3000</h5></td>
+                                            </tr>
+                                            <tr style="background-color: white">
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="funding-div">
+                                                            <img
+                                                                src="./assets/images/fund-icon.svg"
+                                                                class="img-fluid"
+                                                                alt="withdrawal"
+                                                            />
+                                                        </div>
+                                                        <span class="f-weight-600 ml-2">TOP UP</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="master-card-div">
+                                                            <img src="./assets/images/master-card-icon.svg" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="ml-2">
+                                                            <h5 class="font-sm mb-0 f-weight-600">
+                                                                My Master card
+                                                            </h5>
+                                                            <p class="font-xs mb-0">0924 ******* 5675</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <p class="mb-0 f-weight-600"><span class="mr-2">03/21/2022</span>13:45PM</p>
+                                                </td>
+                                                <td>
+                                                    <div class="failed-status">Failed</div>
+                                                </td>
+                                                <td><h5>+3000</h5></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 				</div>
 			</div>
 		</main>
@@ -1628,12 +1348,6 @@
 		></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
 		<script src="./assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/flagstrap/1.0/js/jquery.flagstrap.min.js"
-			integrity="sha512-jPZiVBpHbOc0vbOJ7AMjoN8/9ynXNjLn4j2PeOWFrfDYdq896sv4CaFzTOrHwLa1fsI9m74QUf3XdG5V4JKjZw=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		></script>
 
 		<script>
 			$(document).ready(() => {
@@ -1647,47 +1361,110 @@
 					$(".side-nav").hide();
 					// return false;
 				});
-
-				$("#check").on("change", function () {
-					if (this.checked) {
-						$("#AddUser").hide();
-						$("#users-filter").hide();
-						$("#users-actions").css("display", "flex");
-					} else {
-						$("#AddUser").show();
-						$("#users-filter").css("display", "flex");
-						$("#users-actions").hide();
-					}
-				});
 			});
+		</script>
 
-			$("#demo").flagStrap();
-
-			$(".select-country").flagStrap({
-				countries: {
-					NG: "NGN",
-					AU: "AUD",
-					CA: "CAD",
-					SG: "SGD",
-					GB: "GBP",
+		<script>
+			const ctx = document.getElementById("myChart");
+			const myChart = new Chart(ctx, {
+				type: "bar",
+				data: {
+					labels: [
+						"12 AM",
+						"1 AM",
+						"2 AM",
+						"3 AM",
+						"4 AM",
+						"5 AM",
+						"6 AM",
+						"7 AM",
+						"8 AM",
+					],
+					datasets: [
+						{
+							label: null,
+							data: [2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000],
+							backgroundColor: "#842A83",
+							borderWidth: 1,
+						},
+						{
+							label: null,
+							data: [8000, 8000, 8000, 8000, 8000, 8000, 8000, 8000, 8000],
+							backgroundColor: "#633062",
+							borderWidth: 1,
+						},
+						{
+							label: null,
+							data: [
+								15000, 15000, 15000, 15000, 15000, 15000, 15000, 15000, 15000,
+							],
+							backgroundColor: "rgba(132, 42, 131, 0.45)",
+							borderWidth: 1,
+						},
+					],
 				},
-				buttonSize: "btn-sm",
-				buttonType: "btn-info",
-				labelMargin: "10px",
-				scrollable: false,
-				scrollableHeight: "350px",
+				options: {
+					scales: {
+						x: {
+							stacked: true,
+							grid: {
+								display: false,
+							},
+						},
+						y: {
+							beginAtZero: false,
+							min: 100,
+							max: 16000,
+							grid: {
+								display: false,
+							},
+						},
+					},
+					plugins: {
+						legend: {
+							display: false,
+						},
+					},
+				},
 			});
 
-			$("#advanced").flagStrap({
-				buttonSize: "btn-lg",
-				buttonType: "btn-primary",
-				labelMargin: "20px",
-				scrollable: false,
-				scrollableHeight: "350px",
-			});
-
-			$("#upload-img").click(() => {
-				$("#file_upload").click();
+			const ctx2 = document.getElementById("myPieChart");
+			const myPieChart = new Chart(ctx2, {
+				type: "doughnut",
+				data: {
+					labels: ["Android", "IOS"],
+					datasets: [
+						{
+							label: null,
+							data: [5000, 12000],
+							backgroundColor: ["#842A83", "rgba(132, 42, 131, 0.45)"],
+							borderWidth: 1,
+						},
+					],
+				},
+				options: {
+					// scales: {
+					// 	x: {
+					// 		stacked: true,
+					// 		grid: {
+					// 			display: false,
+					// 		},
+					// 	},
+					// 	y: {
+					// 		beginAtZero: false,
+					// 		min: 100,
+					// 		max: 16000,
+					// 		grid: {
+					// 			display: false,
+					// 		},
+					// 	},
+					// },
+					plugins: {
+						legend: {
+							display: false,
+						},
+					},
+				},
 			});
 		</script>
 	</body>
